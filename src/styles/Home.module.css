@@ -1,12 +1,11 @@
 .heroSection{
-    padding: 4rem 15rem;
+    padding: 6rem 15rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20rem;
     position: relative;
     width: 100vw;
-    min-height: 80vh;
     background: #01591180;
     overflow: hidden;
     
@@ -40,5 +39,76 @@
     font-family: var(--Poppins);
     font-weight: 300;
     font-size: 1.2rem;
-    max-width: 80ch;
+    max-width: 60ch;
+}
+
+.heroSection .heroDetails .heroDetailsLocation{
+    font-family: var(--Poppins);
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.heroSection .heroNextButton{
+    padding: 4rem 4.2rem;
+    border-radius: 50%;
+    background: #FFFFFF60;
+    font-size: 4rem;
+}
+
+.heroSection .heroDetails .heroCTA{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroSection .heroDetails .heroCTA button{
+    padding: 1rem 2rem;
+    background-color: var(--pryClr);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: var(--Poppins);
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.heroSection .heroDetails .heroCTA .heroCTAStyle{
+    background-color: var(--black);
+    padding: 1rem 1.2rem;
+    font-size: 3rem;
+}
+
+.heroSection .extraHeroDetails{
+    position: absolute;
+    top: 5rem;
+    right: 15rem;
+}
+
+.heroSection .extraHeroDetails .completedProjects, .heroSection .extraHeroDetails .yrExp{
+    color: var(--white);
+    padding: 1rem 1rem;
+    font-family: var(--Poppins);
+}
+
+.heroSection .extraHeroDetails .completedProjects{
+    background-color: var(--secClr);
+    margin-bottom: 1rem;
+}
+
+.heroSection .extraHeroDetails .yrExp{
+    background-color: var(--pryClr );
+}
+
+.heroSection .extraHeroDetails h2{
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.heroSection .extraHeroDetails p{
+    font-size: .8rem;
 }
