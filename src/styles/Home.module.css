@@ -1,0 +1,44 @@
+.heroSection{
+    padding: 4rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    position: relative;
+    width: 100vw;
+    min-height: 80vh;
+    background: #01591180;
+    overflow: hidden;
+    
+}
+
+.heroSection .heroImage{
+    z-index: -1;
+}
+
+.heroSection .heroDetails{
+    max-width: 40vw;
+    overflow: hidden;
+    margin: 10rem 0rem;
+    color: var(--white);
+    z-index: 2;
+}
+
+.heroSection .heroDetails .heroDetailsTag{
+    font-family: var(--Poppins);
+}
+
+.heroSection .heroDetails .heroDetailsTitle{
+    font-family: var(--Neuton);
+    font-weight: 400;
+    font-size: 7rem;
+    line-height: .7;
+    margin-bottom: 3rem;
+}
+
+.heroSection .heroDetails .heroDetailsDescription{
+    font-family: var(--Poppins);
+    font-weight: 300;
+    font-size: 1.2rem;
+    max-width: 80ch;
+}

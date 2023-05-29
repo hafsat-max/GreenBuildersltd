@@ -1,8 +1,9 @@
+"use client";
 import React from 'react'
 import styles from '@/styles/component.module.css'
 import Image from "next/image"
 import Link from 'next/link'
-import {} from "antd"
+import {MenuOutlined} from "@ant-design/icons"
 
 function NavBar() {
   return (
@@ -43,6 +44,7 @@ function NavBar() {
             <button>Book Appointment</button>
         </div>
         <div className={styles.navToggle}>
+            <MenuOutlined /> 
 
         </div>
     </div>
