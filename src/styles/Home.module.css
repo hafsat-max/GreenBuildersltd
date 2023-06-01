@@ -5,7 +5,7 @@
     align-items: center;
     gap: 20rem;
     position: relative;
-    width: 100vw;
+    width: 100%;
     background: #01591180;
     overflow: hidden;
     
@@ -16,7 +16,7 @@
 }
 
 .heroSection .heroDetails{
-    max-width: 40vw;
+    width: 40rem;
     overflow: hidden;
     margin: 10rem 0rem;
     color: var(--white);
@@ -112,3 +112,308 @@
 .heroSection .extraHeroDetails p{
     font-size: .8rem;
 }
+
+/* We are Section */
+.weAreSection{
+    margin: 5rem 15rem;
+    text-align: center;
+}
+
+.weAreSection .sectionTitle{
+    font-family: var(--Neuton);
+    color: var(--pryClr);
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.weAreSection .sectionList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.weAreSection .sectionList .listItem{
+    display: flex;
+    gap: 2rem;
+    text-align: left;
+}
+
+.weAreSection .sectionList .listItem .imageContainer{
+    position: relative;
+    height: 7rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+.weAreSection .sectionList .listItem .itemDetails h4{
+    color: var(--secClr);
+    font-size: 1.5rem;
+    font-family: var(--Rubik);
+    margin-bottom: .7rem;
+    font-weight: 500;
+}
+
+.weAreSection .sectionList .listItem .itemDetails p{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-family: var(--Poppins);
+    margin-bottom: .5rem;
+}
+
+/* About Section */
+.aboutSection{
+    margin: 10rem 15rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutSection .aboutDetails{
+    max-width: 50rem;
+}
+
+.aboutSection .aboutDetails h6{
+    color: var(--pryClr);
+}
+
+.aboutSection .aboutDetails h2{
+    color: var(--black);
+    font-family: var(--Kanit);
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+
+.aboutSection .aboutDetails P{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-family: var(--Poppins);
+}
+
+.aboutSection .aboutDetails button{
+    padding: 1rem 2rem;
+    background-color: var(--pryClr);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: var(--Poppins);
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+
+
+.aboutSection .aboutImage{
+    height: 45rem;
+    min-width: 48rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutSection .aboutImage .absoluteImageContainer{
+    position: absolute;
+    top: 0;
+    right: 10rem;
+}
+
+.aboutSection .aboutImage .absoluteImageContainer2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.aboutSection .aboutImage .imageContainer{
+    box-shadow: 0px 2px 25px rgba(0, 33, 91, 0.207605);
+}
+
+.aboutSection .aboutImage .absoluteImageContainer2 .imageContainer{
+    position: relative;
+    width: 25rem;
+    height: 30rem;
+    overflow: hidden;
+    border: 1rem solid var(--white);
+    border-radius: 2pz;
+}
+
+.aboutSection .aboutImage .absoluteImageContainer .imageContainer{
+    position: relative;
+    height: 30rem;
+    width: 20rem;
+    overflow: hidden;
+    border: 1rem solid var(--white);
+    border-radius: 2px;
+}
+
+.aboutSection .aboutImage .aboutCTAStyle{
+    background-color: var(--secClr);
+    padding: 1rem 1.2rem;
+    font-size: 3rem;
+    max-width: 5rem;
+    position: absolute;
+    top: 12.5rem;
+    left: 16rem;
+    color: var(--white);
+
+}
+
+.aboutSection .aboutImage .aboutImageText{
+    max-width: 16rem;
+    position: absolute;
+    left: 28rem;
+    bottom: 5rem;
+}
+
+.aboutSection .aboutImage .aboutImageText p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+    .weAreSection .sectionList{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutSection .aboutImage{
+        min-width: 40rem;
+        height: 35rem;
+    }
+
+    .aboutSection .aboutImage .absoluteImageContainer .imageContainer{
+        width: 17rem;
+        height: 22rem;
+    }
+
+    .aboutSection .aboutImage .absoluteImageContainer2 .imageContainer{
+        width: 20rem;
+        height: 23rem;
+    }
+
+    .aboutSection .aboutImage .aboutCTAStyle{
+        left: 11rem;
+        top: 10rem;
+    }
+
+    .aboutSection .aboutImage .aboutImageText{
+        left: 22rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    /* NavBar */
+    .heroSection .extraHeroDetails, .heroSection .heroNextButton {
+        display: none;
+    }
+
+    .heroSection .heroDetails{
+        width: 100%;
+    }
+
+    .weAreSection{
+        margin: 4rem 8rem;
+    }
+
+    .aboutSection{
+        margin: 10rem 8rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .weAreSection .sectionList{
+        gap: 2rem;        
+    }
+
+    .weAreSection .sectionList .listItem .imageContainer{
+        height: 6rem;
+        max-width: 4rem;
+
+    }
+
+    .weAreSection .sectionList .listItem .itemDetails p{
+        font-size: .8rem;
+    }
+
+    .weAreSection .sectionList .listItem .itemDetails h4{
+        font-size: 1.2rem;
+    }
+
+    .aboutSection{
+        gap: 2rem;
+    }
+
+    .aboutSection .aboutDetails h2{
+        font-size: 2rem;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+
+    .aboutSection .aboutImage{
+        min-width: 32rem;
+        height: 33rem;
+    }
+
+
+    .aboutSection .aboutImage .absoluteImageContainer .imageContainer{
+        width: 16rem;
+        height: 20rem;
+    }
+
+    .aboutSection .aboutImage .absoluteImageContainer{
+        right: 5rem;
+    }
+
+    .aboutSection .aboutImage .absoluteImageContainer2 .imageContainer{
+        width: 17rem;
+        height: 20rem;
+    }
+
+    .aboutSection .aboutImage .aboutImageText{
+        left: 19rem;
+    }
+
+    
+    .aboutSection .aboutImage .aboutCTAStyle{
+        left: 9rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .heroSection{
+        padding: 3rem;
+    }
+
+    .weAreSection{
+        margin: 3rem;
+
+    }
+
+    .aboutSection{
+        margin: 7rem 3rem;
+    }
+
+    .aboutSection .aboutImage .aboutImageText p{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .weAreSection .sectionList{
+        grid-template-columns: 1fr;
+    }
+
+    .aboutSection{
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .aboutSection .aboutImage{
+        min-width: 30rem;
+        height: 33rem;
+    }
+}
+
