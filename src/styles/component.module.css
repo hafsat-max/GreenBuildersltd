@@ -92,6 +92,90 @@
     cursor: pointer;
 }
 
+/* Testimonial Component */
+.testimonialContainer{
+    min-width: 30rem;
+}
+.testimonialContainer .quote {
+    padding: 1rem;
+    overflow: hidden;
+    background-color: var(--pryClr);
+    max-width: 5.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonialContainer .quote .quoteContainer{
+    background: var(--pryClr);
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    color: white;
+}
+
+.testimonialContainer p{
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.testimonialContainer .user{
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.testimonialContainer .user h4{
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.testimonialContainer .user h6{
+    color: var(--black);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.testimonialContainer .slider{
+    display: flex;
+    gap: .5rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.testimonialContainer .slider .dot{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: var(--black);
+}
+
+.testimonialContainer .slider .active{
+    width: .8rem;
+    height: .8rem;
+}
+
+/* Carousel Component */
+.carouselContainer{
+    display: flex;
+    gap: 4rem;
+    overflow-x: scroll;
+    padding: 2rem;
+    box-shadow: 2, 3, 4, var(--pryClr);
+}
+
+.carouselContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselContainer .carouselItem{
+    position: relative;
+    height: 15rem;
+    min-width: 15rem;
+    overflow: hidden;
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 900px) {
     /* NavBar */

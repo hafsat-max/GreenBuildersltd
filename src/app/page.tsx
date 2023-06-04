@@ -10,8 +10,28 @@ import {
   PlusOutlined
 } from "@ant-design/icons"
 import LuxuryProjects from '@/components/LuxuryProjects';
+import Testimonial from '@/components/Testimonial';
+import Carousel from '@/components/Carousel';
+
 
 export default function Home() {
+  const companies = [
+    <Image key={1} src={"/images/companies/1.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={1} src={"/images/companies/2.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={2} src={"/images/companies/3.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={2} src={"/images/companies/4.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={2} src={"/images/companies/5.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={3} src={"/images/companies/6.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={1} src={"/images/companies/1.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={1} src={"/images/companies/2.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={2} src={"/images/companies/3.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={2} src={"/images/companies/4.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={2} src={"/images/companies/5.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+    <Image key={3} src={"/images/companies/6.png"} alt='About1' fill style={{objectFit: "contain"}} />,
+
+  ]
+
+
   return (
     <>
       <NavBar />
@@ -183,8 +203,20 @@ export default function Home() {
           <div className={styles.testimonialImage}>
             <Image src={"/images/testimonial.png"} alt='Testimonial' fill style={{objectFit: "cover"}} />
           </div>
+
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
         </div>
 
+      </section>
+
+      <div className={styles.landingPageVideo}>
+
+      </div>
+
+      <section className={styles.companies}>
+        <Carousel items={companies} />
       </section>
     </>
   )
