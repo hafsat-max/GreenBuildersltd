@@ -6,8 +6,10 @@ import NavBar from '@/components/NavBar'
 import {
   RightOutlined,
   EnvironmentOutlined,
-  CaretRightFilled
+  CaretRightFilled,
+  PlusOutlined
 } from "@ant-design/icons"
+import LuxuryProjects from '@/components/LuxuryProjects';
 
 export default function Home() {
   return (
@@ -137,6 +139,52 @@ export default function Home() {
             <p>We Construct and Manage Places and Infrastructures </p>
           </div>
         </div>
+      </section>
+
+      {/* Spotlight section */}
+      <section className={styles.spotlightSection}>
+        <h4>SPOTLIGHT PROJECTS</h4>
+        <h1>We Build Luxury</h1>
+        <div className={styles.spotlightContainer}>
+          <div className={styles.longImageContainer}> 
+            <Image src={"/images/spotlight/spot1.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+          </div>
+          <div className={styles.imagesContainer}>
+            <div className={styles.imageContainer}> 
+              <Image src={"/images/spotlight/spot2.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+            </div>
+            <div className={styles.imageContainer}> 
+              <Image src={"/images/spotlight/spot3.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+            </div>
+            <div className={styles.imageContainer}> 
+              <Image src={"/images/spotlight/spot5.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+              <div className={styles.spotOverlay}>
+                <p>LUXURY/COMMERCIAL</p>
+                <h4>Amazon Hotel</h4>
+                <div className={styles.overlayAction}>
+                  <PlusOutlined />
+                </div>
+              </div>
+            </div>
+            <div className={styles.imageContainer}> 
+              <Image src={"/images/spotlight/spot4.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.luxSection}>
+        <LuxuryProjects />
+      </section>
+      {/* Testimonial section */}
+      <section className={styles.testimonialSection}>
+        <h4>TESTIMONIAL</h4>
+        <h1>Our Clients Say</h1>
+        <div className={styles.testimonials}>
+          <div className={styles.testimonialImage}>
+            <Image src={"/images/testimonial.png"} alt='Testimonial' fill style={{objectFit: "cover"}} />
+          </div>
+        </div>
+
       </section>
     </>
   )
