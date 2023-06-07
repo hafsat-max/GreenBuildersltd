@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image'
-import styles from "../styles/Home.module.css"
+import styles from "@/styles/Home.module.css"
 import NavBar from '@/components/NavBar'
 import {
   RightOutlined,
@@ -12,6 +12,7 @@ import {
 import LuxuryProjects from '@/components/LuxuryProjects';
 import Testimonial from '@/components/Testimonial';
 import Carousel from '@/components/Carousel';
+import Footer from '@/components/Footer';
 
 
 export default function Home() {
@@ -216,8 +217,12 @@ export default function Home() {
       </div>
 
       <section className={styles.companies}>
+        <h1>Over the Years, We have had some Successful Partnerships</h1>
+        <h4>Our collaborative vision for building projects has paid off with a number of collaborations and partnerships</h4>
         <Carousel items={companies} />
       </section>
+
+      <Footer />
     </>
   )
 }

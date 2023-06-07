@@ -42,6 +42,48 @@
     display: none;
 }
 
+
+
+.heroSection {
+    padding: 6rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.heroSection .heroImage {
+    z-index: -1;
+}
+
+.heroSection .heroDetails {
+    overflow: hidden;
+    margin: 10rem 0rem;
+    color: var(--white);
+    z-index: 2;
+}
+
+.heroSection .heroDetails .heroDetailsTag {
+    font-family: var(--Poppins);
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.heroSection .heroDetails .heroDetailsTitle {
+    font-family: var(--Neuton);
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: .7;
+    margin-bottom: 3rem;
+}
+
+
+
+
 .luxuryProjectsContainer{
     display: flex;
     width: 100%;
@@ -117,6 +159,7 @@
 .testimonialContainer p{
     text-align: justify;
     font-size: 1rem;
+    font-family: var(--Jakarta);
 }
 
 .testimonialContainer .user{
@@ -128,12 +171,14 @@
     color: var(--black);
     font-size: 1.2rem;
     font-weight: 600;
+    font-family: var(--Jakarta);
 }
 
 .testimonialContainer .user h6{
     color: var(--black);
     font-size: .8rem;
     font-weight: 500;
+    font-family: var(--Jakarta);
 }
 
 .testimonialContainer .slider{
@@ -176,7 +221,54 @@
 }
 
 
+/* FOOTER */
+.footerContainer{
+    background-color: var(--secClr);
+    padding: 5rem 15rem;
+    color: var(--white);
+    font-family: var(--Jakarta);
+}
+
+.footerContainer .footerGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.footerContainer .footerGrid .gridItem .brand{
+    position: relative;
+    width: 10rem;
+    height: 6rem;
+    overflow: hidden;
+}
+
+.footerContainer .footerGrid .gridItem p{
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    text-transform: capitalize;
+}
+
+.footerContainer .footerGrid .gridItem .socials{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.footerContainer .footerGrid .gridItem .socials .social{
+    height: 3.5rem;
+    width: 3.5rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
 /* Media Queries */
+@media screen and (max-width: 1100px) {
+    /* NavBar */
+
+}
+
 @media screen and (max-width: 900px) {
     /* NavBar */
     .navContainer{
@@ -215,6 +307,10 @@
 
     .navContainer .navToggle{
         display: block;
+    }
+
+    .heroSection{
+        padding: 5rem 3rem;
     }
 }
 

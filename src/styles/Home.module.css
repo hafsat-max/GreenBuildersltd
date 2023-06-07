@@ -366,6 +366,7 @@
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 0rem;
+    font-family: var(--Neuton);
 }
 
 .testimonialSection h1 {
@@ -399,6 +400,26 @@
 /* Companies */
 .companies{
     margin: 5rem 15rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.companies h1{
+    font-family: var(--Jakarta);
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+    color: #292D32;
+}
+
+.companies h4 {
+    color: var(--pryClr);
+    font-family: var(--Jakarta);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0rem;
 }
 
 /* Media Queries */
@@ -491,6 +512,10 @@
     }
 
     .testimonialSection{
+        margin: 5rem 8rem;
+    }
+
+    .companies{
         margin: 5rem 8rem;
     }
 }
@@ -587,6 +612,10 @@
 
     
     .testimonialSection{
+        margin: 5rem 3rem;
+    }
+
+    .companies{
         margin: 5rem 3rem;
     }
 }
