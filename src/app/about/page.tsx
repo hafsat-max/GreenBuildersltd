@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <NavBar />
       {/* Hero Section */}
-        <PageHero pageTag={"Catch a glimpse of our building projects here"} pageTitle={"Projects & More"} pageImage={"project"} />
+        <PageHero pageTag={"Know us, we build dream houses..."} pageTitle={"All About GreenBuilders"} pageImage='about' />
 
       {/* Spotlight section */}
       <section className={styles.luxSection}>

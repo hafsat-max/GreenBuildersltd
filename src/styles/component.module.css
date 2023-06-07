@@ -233,6 +233,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--pryClr);
 }
 
 .footerContainer .footerGrid .gridItem .brand{
@@ -242,8 +244,8 @@
     overflow: hidden;
 }
 
-.footerContainer .footerGrid .gridItem p{
-    font-size: 1.4rem;
+.footerContainer .footerGrid .gridItem > p{
+    font-size: 1.1rem;
     margin-top: 3rem;
     text-transform: capitalize;
 }
@@ -262,6 +264,65 @@
     border-radius: 50%;
 }
 
+.footerContainer .footerGrid .gridItem .list .listHead{
+    margin-bottom: 2rem;
+}
+
+.footerContainer .footerGrid .gridItem .list .listHead{
+    color: var(--pryClr);
+}
+
+.footerContainer .footerGrid .gridItem .list .listItems{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.footerContainer .footerGrid .gridItem .list .listItems a{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footerContainer .footerGrid .gridItem .list .listItems .contactItems{
+    display: flex;
+    gap: 2rem;
+}
+
+.footerContainer .footerGrid .gridItem .list .listItems .contactItems .contactDetails h6{
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--pryClr);
+}
+
+.footerContainer .footerGrid .gridItem .list .listItems .contactItems .contactDetails p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+
+.footerContainer .copyright{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 1rem;
+    gap: 2rem;
+}
+
+.footerContainer .copyright .terms{
+    display: flex;
+    gap: 2rem;
+}
+
+.footerContainer .copyright .terms p:first-child{
+    border-right: 1px solid white;
+    padding-right: 2rem;
+}
+
+
+
 
 /* Media Queries */
 @media screen and (max-width: 1100px) {
@@ -278,6 +339,10 @@
 
     .navContainer .navLinks{
         gap: 1.4rem;
+    }
+
+    .footerContainer {
+        padding: 5rem 8rem;
     }
 }
 
@@ -312,6 +377,13 @@
     .heroSection{
         padding: 5rem 3rem;
     }
+    .footerContainer {
+        padding: 5rem 3rem;
+    }
+
+    .footerContainer .footerGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -322,5 +394,9 @@
 
     .navContainer .navCTA{
         display: none;
+    }
+
+    .footerContainer .footerGrid{
+        grid-template-columns: 1fr;
     }
 }
