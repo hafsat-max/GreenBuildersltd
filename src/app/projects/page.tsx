@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image'
-import styles from "@/styles/Home.module.css"
+import styles from "@/styles/project.module.css"
 import NavBar from '@/components/NavBar'
 import {
   RightOutlined,
@@ -24,15 +24,32 @@ export default function Home() {
       {/* Hero Section */}
         <PageHero pageTag={"Catch a glimpse of our building projects here"} pageTitle={"Projects & More"} pageImage={"project"} />
 
-      {/* Spotlight section */}
-      <section className={styles.luxSection}>
-        <h1>Property Development</h1>
-        <LuxuryProjects />
+      <section className={styles.portfolioSection}>
+        <div className={styles.portHead}>
+          <h6>PORTFOLIO</h6>
+          <h1>Our Portfolio of Completed Projects Speaks Volume of Our Expertise....</h1>
+          <div className={styles.heroNextButton}>
+            <RightOutlined />
+          </div>
+        </div>
+        <div className={styles.portDetails}>
+          <p>Discover the remarkable portfolio of GreenBuilders Nig. Ltd., featuring outstanding projects such as Alice Court I and Alice Court II, among others. Our team of skilled professionals has consistently delivered top-quality construction services, ensuring the utmost satisfaction of our clients. From luxurious residential developments to innovative commercial ventures, our expertise and commitment to excellence shine through in every project we undertake.</p>
+          <button>Learn more →</button>
+        </div>
       </section>
 
-      <div className={styles.landingPageVideo}>
+      <section className={styles.projects}>
+        <h1>Property Development</h1>
+        <LuxuryProjects />
 
-      </div>
+      </section>
+
+      <section className={styles.projects}>
+        <h1>Construction Projects</h1>
+        <LuxuryProjects />
+
+      </section>
+  
 
       <Footer />
     </>

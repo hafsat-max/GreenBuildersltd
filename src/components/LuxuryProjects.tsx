@@ -9,7 +9,7 @@ function LuxuryProjects() {
         <div className={styles.imageContainer}> 
             <Image src={"/images/spotlight/lux1.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
             <div className={styles.spotOverlay}>
-                <p>Luxury APrtment</p>
+                <p>Luxury Apartment</p>
                 <h4>Alice Court II</h4>
                 <div className={styles.overlayAction}>
                     <PlusOutlined />
