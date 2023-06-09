@@ -38,7 +38,7 @@ export default function Home() {
       <NavBar />
       {/* Hero Section */}
       <section className={styles.heroSection}>
-        <Image className={styles.heroImage} src={"/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
+        <Image className={styles.heroImage} src={"/images/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
         <div className={styles.heroDetails}>
           <p className={styles.heroDetailsTag}>LUXURY, CLASS & EXCELLENCE</p>
           <h1 className={styles.heroDetailsTitle}>Alice Court I</h1>
