@@ -48,6 +48,30 @@ export default function Home() {
           </div>
           <p>2300 Square Feet</p>
         </div>
+        <div className="info">
+          <div className="infoIcon">
+            <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+          </div>
+          <p>20 Bedrooms</p>
+        </div>
+        <div className="info">
+          <div className="infoIcon">
+            <Image src={"/svgs/projects/car.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+          </div>
+          <p>1 Garage</p>
+        </div>
+        <div className="info">
+          <div className="infoIcon">
+            <Image src={"/svgs/projects/time.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+          </div>
+          <p>24/7 Power Supply</p>
+        </div>
+        <div className="info">
+          <div className="infoIcon">
+            <Image src={"/svgs/projects/bathroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+          </div>
+          <p>5 Bathrooms</p>
+        </div>
       </div>
 
       <Footer />

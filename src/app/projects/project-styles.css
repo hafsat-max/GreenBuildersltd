@@ -53,8 +53,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-    margin: 0 15rem;
+    margin: 0 15rem 5rem;
     font-family: var(--Jakarta);
+    justify-content: space-between;
 }
 
 .moreInfo .info{
@@ -70,7 +71,7 @@
 }
 
 .moreInfo .info p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 /* Media Queries */
@@ -78,6 +79,10 @@
     /* NavBar */
     .project-details{
         margin: 5rem 8rem;
+    }
+
+    .moreInfo{
+        margin: 0 8rem 5rem;
     }
 }
 
@@ -89,6 +94,20 @@
     
     .project-details .projectDetailsText p{
         font-size: 1.3rem;
+    }
+
+    .moreInfo{
+        margin: 0 3rem 5rem;
+    }
+
+    .moreInfo .info p {
+        font-size: 1.1rem;
+    }
+
+    
+    .moreInfo .info .infoIcon{
+        width: 2rem;
+        height: 2rem;
     }
 }
 
