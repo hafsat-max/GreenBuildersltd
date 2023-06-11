@@ -10,9 +10,12 @@ import {
 import Footer from '@/components/Footer';
 import ProjectHero from '@/components/ProjectHero';
 import Image from "next/image";
+import LuxuryProjects from "@/components/LuxuryProjects";
 
 
 export default function Home() {
+
+  const imageNumber = [, 2, 3, 4, 5, 6, 7, 8, 9]
 
   return (
     <>
@@ -73,6 +76,42 @@ export default function Home() {
           <p>5 Bathrooms</p>
         </div>
       </div>
+
+      <div className="gallery">
+        <div className="images">
+          {imageNumber.map((e, i) => {
+            return(
+              <div key={i} className="imageContainer">
+                <Image src={`/images/Alice/Alice_${e}.png`} alt={`Alice_${e}`} fill style={{objectFit: "cover"}} />
+              </div>
+
+            )
+          })}
+        </div>
+        <div className="map">
+          <Image src={"/map.png"} alt={"Map"} fill className="image" />
+        </div>
+      </div>
+      <div className="projectController">
+        <div className="ctrlGrp">
+          <div className="icon">
+            <Image src={"/svgs/prev.svg"} alt="Prev" fill className="imageContain" />
+          </div>
+          <p>Previous Project</p>
+        </div>
+        <div className="ctrlGrp">
+          <div className="icon">
+            <Image src={"/svgs/next.svg"} alt="Prev" fill className="imageContain" />
+          </div>
+          <p>Next Project</p>
+        </div>
+      </div>
+
+      <div className="projects">
+        <h1>Check Other Building Projects</h1>
+        <LuxuryProjects />
+      </div>
+
 
       <Footer />
     </>
