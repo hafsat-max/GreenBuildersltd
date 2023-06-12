@@ -60,7 +60,7 @@ export default function Home() {
         <section className={styles.otherServices}>
           <h2>Other Services</h2>
           <div className={styles.cardContainer}>
-            <ServiceCard onClick={()=>setActiveCard("dev")} active={activeCard === "dev"}  service={"Development"} />
+            <ServiceCard onClick={()=>setActiveCard("dev")} active={activeCard === "dev"}  service={"Property Development"} />
             <ServiceCard onClick={()=>setActiveCard("PrM")} active={activeCard === "PrM"} service={"Property Management"} />
             <ServiceCard onClick={()=>setActiveCard("CoS")} active={activeCard === "CoS"} service={"Consultancy Service"} />
           </div>
@@ -88,7 +88,9 @@ export default function Home() {
             <div className={styles.devAction}>
               <h2>Get an appointment with our Expert</h2>
               <p>Get in touch with someone from our wide arrays of consultants. Your building projects need the best hands.</p>
-              <button>→</button>
+              <button>
+                <Image src={"/svgs/button_right.svg"} alt="Button_Right" fill style={{objectFit: "contain"}}  />
+              </button>
             </div>
           </div>
         </section>
