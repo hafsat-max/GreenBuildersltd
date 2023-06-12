@@ -371,6 +371,61 @@
 }
 
 
+.cardContainer{
+    width: 20rem;
+    padding: 2rem 2rem 7rem;
+    font-family: var(--Jakarta);
+    position: relative;
+    border-top: 6px solid var(--secClr);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: .3s ease;
+}
+.cardContainer p{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.cardContainer h3{
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.cardContainer .cardAction{
+    position: absolute;
+    bottom: 2rem;
+}
+
+.cardContainer .cardAction h5{
+    font-weight: 700;
+}
+
+.cardContainer .cardAction h5 span{
+    display: block;
+    color: var(--pryClr);
+}
+
+.cardContainer .dash{
+    position: absolute;
+    width: 40px;
+    top: -5.6px;
+    right: 0;
+    background: var(--pryClr);
+    padding: 2.8px;
+}
+
+.cardContainer:hover, .cardContainer:focus{
+    background: var(--secClr);
+    border-top: 6px solid var(--white);
+    color: var(--white);
+}
+
+.activeCardContainer{
+    background: var(--secClr);
+    border-top: 6px solid var(--white);
+    color: var(--white);
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 1100px) {

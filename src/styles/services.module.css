@@ -16,9 +16,9 @@
 }
 
 .aboutSection .aboutDetails h2{
-    color: var(--black);
+    color: var(--secClr);
     font-family: var(--Kanit);
-    font-size: 2.4rem;
+    font-size: 3rem;
     line-height: 1.2;
 }
 
@@ -106,7 +106,86 @@
     font-size: 1.5rem;
     color: #9CC03A;
     font-family: var(--Kanit);
-    line-height: 1.2rem;
+    line-height: 1.4rem;
+}
+
+/* Other Services */
+.otherServices{
+    padding: 5rem 15rem;
+}
+
+.otherServices h2{
+    font-family: var(--Kanit);
+    letter-spacing: 1.3px;
+}
+
+.otherServices .cardContainer{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.otherServices .serviceDetails{
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+}
+
+.otherServices .serviceDetails .devText{
+    max-width: 50vw;
+    margin-bottom: 5rem;
+}
+
+.otherServices .serviceDetails .devText h2{
+    color: var(--secClr);
+}
+
+.otherServices .serviceDetails .devText p{
+    font-family: var(--Jakarta);
+}
+
+.otherServices .serviceDetails .devImage{
+    position: relative;
+    width: 50vw;
+    height: 60rem;
+}
+
+.otherServices .serviceDetails .sideImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.otherServices .serviceDetails .sideImg .sideImgContainer{
+    position: relative;
+    width: 22vw;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.otherServices .serviceDetails .devAction{
+    position: absolute;
+    top: 25rem;
+    right: 10vw;
+    padding: 4rem 2rem 4rem 4rem;
+    max-width: 25vw;
+    background-color: var(--pryClr);
+    color: var(--white);
+    box-shadow: 5rem 7rem 5px 10px rgba(0, 0, 0, .2);
+}
+
+.otherServices .serviceDetails .devAction h2{
+    margin-bottom: 5rem;
+}
+
+.otherServices .serviceDetails .devAction p{
+    margin-bottom: 5rem;
+}
+
+.otherServices .serviceDetails .devAction button{
+    margin-bottom: 5rem;
 }
 
 
