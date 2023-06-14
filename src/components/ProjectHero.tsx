@@ -7,8 +7,10 @@ import {
   CaretRightFilled,
   PlusOutlined
 } from "@ant-design/icons"
+import Link from 'next/link'
+import { Route } from 'next'
 
-function ProjectHero({tag, name, description, location}: {tag: string, name: string, description: string, location: string}) {
+function ProjectHero({tag, name, description, location, linkBase, project}: {tag: string, name: string, description: string, location: string, linkBase?: string, project?: boolean}) {
   return (
       <section className={styles.heroSection}>
         <Image className={styles.heroImage} src={"/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
@@ -22,12 +24,14 @@ function ProjectHero({tag, name, description, location}: {tag: string, name: str
             <EnvironmentOutlined /> 
             <p>{location}</p>
           </div>
-          <div className={styles.heroCTA}>
-            <button>Learn more →</button>
+          {project && <div className={styles.heroCTA}>
+            <Link href={`"/projects/${linkBase}`}>
+              <button>Learn more →</button>
+            </Link>
             <div className={styles.heroCTAStyle}>
               <CaretRightFilled />
             </div>
-          </div>
+          </div>}
         </div>
         <div className={styles.heroNextButton}>
           <RightOutlined />

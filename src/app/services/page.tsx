@@ -16,6 +16,7 @@ import ContactCard from '@/components/ContactCard';
 import TextField from '@/components/TextField';
 import TextArea from '@/components/TextArea';
 import ServiceCard from '@/components/ServiceCard';
+import Link from "next/link";
 
 
 export default function Home() {
@@ -34,7 +35,9 @@ export default function Home() {
             <h6>OUR SERVICES</h6>
             <h2>We are always Ready to Serve You Better...</h2>
             <p>We offer a wide range of construction services to suit your needs. Whether you are looking to build a new home, remodel your existing one, or construct a commercial building, we have the skills and expertise to handle any project, big or small.</p>
-            <button>Learn more →</button>
+            <Link href={"/projects"}>
+              <button>Learn more →</button>
+            </Link>
             </div>
             <div className={styles.aboutImage}>
             <div className={styles.absoluteImageContainer}>

@@ -127,6 +127,10 @@
     padding: 2rem 0;
 }
 
+.otherServices .cardContainer::-webkit-scrollbar {
+    display: none;
+}
+
 .otherServices .serviceDetails{
     margin-top: 5rem;
     display: flex;

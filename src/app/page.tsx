@@ -13,6 +13,8 @@ import LuxuryProjects from '@/components/LuxuryProjects';
 import Testimonial from '@/components/Testimonial';
 import Carousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
+import Link from "next/link"
+import ProjectHero from '@/components/ProjectHero';
 
 
 export default function Home() {
@@ -37,7 +39,8 @@ export default function Home() {
     <>
       <NavBar />
       {/* Hero Section */}
-      <section className={styles.heroSection}>
+      
+      {/* <section className={styles.heroSection}>
         <Image className={styles.heroImage} src={"/images/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
         <div className={styles.heroDetails}>
           <p className={styles.heroDetailsTag}>LUXURY, CLASS & EXCELLENCE</p>
@@ -50,7 +53,9 @@ export default function Home() {
             <p>Alice Court I, Gbagada Estate, Lagos.</p>
           </div>
           <div className={styles.heroCTA}>
-            <button>Learn more →</button>
+            <Link href={"/projects/alice-court-1"}>
+              <button>Learn more →</button>
+            </Link>
             <div className={styles.heroCTAStyle}>
               <CaretRightFilled />
             </div>
@@ -71,7 +76,9 @@ export default function Home() {
           </div>
         </div>
 
-      </section>
+      </section> */}
+
+      <ProjectHero tag={"LUXURY, CLASS & EXCELLENCE"} name={"Alice Court I"} description={"Alice Court I is a luxury building project that offers a sophisticated living experience in a prime location. With exquisite design and state-of-the-art amenities, Alice Court I promises to provide residents with a comfortable and stylish lifestyle. The building boasts spacious and elegantly designed apartments, stunning views, and top-notch facilities ."} location={"Alice Court I, Gbagada Estate, Lagos."} linkBase='alice-court-1' project={true} />
 
       {/* We are Green Builders */}
       <section className={styles.weAreSection}>
@@ -140,7 +147,9 @@ export default function Home() {
           <h6>ABOUT US</h6>
           <h2>With our knowledge we guarantee success</h2>
           <p>We offer a wide range of construction services to suit your needs. Whether you are looking to build a new home, remodel your existing one, or construct a commercial building, we have the skills and expertise to handle any project, big or small.</p>
-          <button>Learn more →</button>
+          <Link href={"/about"}>
+            <button>Learn more →</button>
+          </Link>
         </div>
         <div className={styles.aboutImage}>
           <div className={styles.absoluteImageContainer}>
