@@ -139,6 +139,16 @@
     position: relative;
 }
 
+.otherServices .serviceDetails button{
+    background-color: var(--pryClr);
+    padding: 1rem 2rem;
+    color: var(--white);
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    letter-spacing: 1.3px;
+}
+
 .otherServices .serviceDetails .devText{
     width: 50vw;
     margin-bottom: 5rem;

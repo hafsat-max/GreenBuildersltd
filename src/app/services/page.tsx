@@ -68,7 +68,7 @@ export default function Home() {
             <ServiceCard onClick={()=>setActiveCard("CoS")} active={activeCard === "CoS"} service={"Consultancy Service"} />
           </div>
 
-          <div className={styles.serviceDetails}>
+          {activeCard === "dev" && <div className={styles.serviceDetails}>
             <div className={styles.devText}>
               <h2>Development</h2>
               <p>We specialize in residential and commercial properties, and we take pride in our ability to deliver on-time and on-budget while maintaining the highest standards of quality. Our expert team of developers, architects, and designers work together to create properties that not only meet the needs of our clients but exceed their expectations.
@@ -77,6 +77,7 @@ export default function Home() {
               <br />
                 
               We understand that every construction project is unique, and we approach each one with the utmost attention to detail and a commitment to excellence. From the initial planning stages to the final touches, we work closely with our clients to ensure that their vision is brought to life.</p>
+              <button>View Projects →</button>  
             </div>
             <div className={styles.devImage}>
               <Image src={"/images/services/development/main.png"} alt="Development" fill style={{objectFit: "cover"}} />
@@ -95,7 +96,57 @@ export default function Home() {
                 <Image src={"/svgs/button_right.svg"} alt="Button_Right" fill style={{objectFit: "contain"}}  />
               </button>
             </div>
-          </div>
+          </div>}
+          {activeCard === "PrM" && <div className={styles.serviceDetails}>
+            <div className={styles.devText}>
+              <h2>Consultancy Service</h2>
+              <p>With our deep understanding of the construction industry and years of experience, we offer consultancy services that cover various aspects of the project lifecycle. Whether you are planning a new construction project, seeking to optimize an existing development, or facing specific challenges within your real estate portfolio, our team of experienced consultants is ready to assist you.
+              <br /><br />
+              Our consultancy services encompass a wide range of areas, including project feasibility analysis, design review, cost estimation, and construction planning. We collaborate closely with our clients to gain a thorough understanding of their goals, objectives, and constraints, enabling us to provide tailored solutions that align with their vision and requirements.</p>
+            </div>
+            <div className={styles.devImage}>
+              <Image src={"/images/services/consultancy/main.png"} alt="Development" fill style={{objectFit: "cover"}} />
+            </div>
+
+            <div className={styles.sideImg}>
+              <div className={styles.sideImgContainer}>
+                <Image src={"/images/services/consultancy/sideImg.png"} alt="Development" fill style={{objectFit: "cover"}} />
+              </div>
+            </div>
+
+            <div className={styles.devAction}>
+              <h2>Get an appointment with our Expert</h2>
+              <p>Get in touch with someone from our wide arrays of consultants. Your building projects need the best hands.</p>
+              <button>
+                <Image src={"/svgs/button_right.svg"} alt="Button_Right" fill style={{objectFit: "contain"}}  />
+              </button>
+            </div>
+          </div>}
+          {activeCard === "CoS" && <div className={styles.serviceDetails}>
+            <div className={styles.devText}>
+              <h2>Property Management</h2>
+              <p>At GreenBuilders Nig. Ltd., we take pride in delivering professional and personalized property management services. With our extensive knowledge, attention to detail, and commitment to excellence, you can trust us to protect your investment and ensure its long-term success. Experience the difference of our real estate property management services and let us help you unlock the full potential of your properties.
+              <br /><br />
+              Our dedicated team of property management professionals understands the importance of effective property oversight. We handle all aspects of property management, starting from marketing and tenant screening to lease management, maintenance, and financial reporting. Our goal is to ensure a seamless and profitable experience for property owners, while also ensuring tenant satisfaction.</p>
+            </div>
+            <div className={styles.devImage}>
+              <Image src={"/images/services/property/main.png"} alt="Development" fill style={{objectFit: "cover"}} />
+            </div>
+
+            <div className={styles.sideImg}>
+              <div className={styles.sideImgContainer}>
+                <Image src={"/images/services/property/sideImg.png"} alt="Development" fill style={{objectFit: "cover"}} />
+              </div>
+            </div>
+
+            <div className={styles.devAction}>
+              <h2>Get an appointment with our Expert</h2>
+              <p>Get in touch with someone from our wide arrays of consultants. Your building projects need the best hands.</p>
+              <button>
+                <Image src={"/svgs/button_right.svg"} alt="Button_Right" fill style={{objectFit: "contain"}}  />
+              </button>
+            </div>
+          </div>}
         </section>
 
 
