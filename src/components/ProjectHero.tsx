@@ -25,7 +25,7 @@ function ProjectHero({tag, name, description, location, linkBase, project}: {tag
             <p>{location}</p>
           </div>
           {project && <div className={styles.heroCTA}>
-            <Link href={`"/projects/${linkBase}`}>
+            <Link href={`/projects/${linkBase}`}>
               <button>Learn more →</button>
             </Link>
             <div className={styles.heroCTAStyle}>

@@ -1,6 +1,6 @@
 "use client";
 
-import {useState} from "react"
+import React, {useState} from "react"
 import Image from 'next/image'
 import styles from "@/styles/services.module.css"
 import NavBar from '@/components/NavBar'
