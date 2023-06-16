@@ -3,17 +3,12 @@
 import Image from 'next/image'
 import styles from "@/styles/contact.module.css"
 import NavBar from '@/components/NavBar'
-import {
-  RightOutlined,
-  EnvironmentOutlined,
-  CaretRightFilled,
-  PlusOutlined
-} from "@ant-design/icons"
 import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 import ContactCard from '@/components/ContactCard';
 import TextField from '@/components/TextField';
 import TextArea from '@/components/TextArea';
+
 
 
 export default function Home() {
@@ -66,16 +61,19 @@ export default function Home() {
         </section>
 
         <section className={styles.contactForm}>
-            <div className={styles.contactGrp}>
-                <TextField placeholder={"Your Full Name"} text={"text"} />
-                <TextField placeholder={"Your Email Address"} text={"text"} />
-            </div>
-            <div className={styles.contactGrp}>
-                <TextField placeholder={"Your Phone Number"} text={"text"} />
-                <TextField placeholder={"Your Address"} text={"text"} />
-            </div>
-            <TextArea placeholder={"Enter Your Message Here . . ."} />
-            <button>Submit Message →</button>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfnD7WxtLwIHYxRO-pzR5iFYNPXV5Brl_o1m_kNdmpswdrYBQ/formResponse">
+                <div className={styles.contactGrp}>
+                    <TextField name='entry.1120761330' placeholder={"Your Full Name"} text={"text"} />
+                    <TextField name='entry.915676961' placeholder={"Your Email Address"} text={"text"} />
+                </div>
+                <div className={styles.contactGrp}>
+                    <TextField name='entry.174219344' placeholder={"Your Phone Number"} text={"text"} />
+                    <TextField name='entry.993730882' placeholder={"Your Address"} text={"text"} />
+                </div>
+                <TextArea name='entry.261272310' placeholder={"Enter Your Message Here . . ."} />
+                <button type='submit' >Submit Message →</button>
+
+            </form>
         </section>
 
         <section className={styles.mapSection}>

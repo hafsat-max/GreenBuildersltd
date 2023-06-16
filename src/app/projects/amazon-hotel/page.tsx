@@ -1,34 +1,34 @@
 "use client";
 import "../project-styles.css"
 import NavBar from '@/components/NavBar'
+import Link from "next/link";
 import Footer from '@/components/Footer';
 import ProjectHero from '@/components/ProjectHero';
 import Image from "next/image";
 import LuxuryProjects from "@/components/LuxuryProjects";
-import Link from "next/link";
 
 
-export default function Alice_Court_1() {
+export default function Amazon_Hotel() {
 
-  const imageNumber = [2, 3, 4, 5, 6, 7, 8, 9]
+  const imageNumber = [1, 2, 3, 4, 5, 6, 7, 8]
 
   return (
     <>
       <NavBar />
       {/* Hero Section */}
-      <ProjectHero tag={"LUXURY, CLASS & EXCELLENCE"} name={"Alice Court I"} description={"Alice Court I is a luxury building project that offers a sophisticated living experience in a prime location. With exquisite design and state-of-the-art amenities, Alice Court I promises to provide residents with a comfortable and stylish lifestyle. The building boasts spacious and elegantly designed apartments, stunning views, and top-notch facilities ."} location={"Alice Court I, Gbagada Estate, Lagos."} />
+      <ProjectHero tag={"LUXURY, CLASS & EXCELLENCE"} name={"Amazon Hotel"} description={"Amazon Hotel is a property that contains 7 units apartments; 5 three bedroom apartments and 2 three bedroom apartments with boys' quarters. It is located in a gated  and secure estate in Gbagada. It consists of features including; central power system with 24 hours electricity, facility management and CCTV, proper waste management, and stationary security personnel."} location={"Josodat Estate, Gbagada, Lagos."} />
 
       <div className="project-details">
         <div className="projectDetailsImage">
-          <Image className="image" src={"/images/Alice/alice_main.png"} alt="Alice Court 1" fill />
+          <Image className="image" src={"/images/Alice_Court_2/1.jpg"} alt="Alice Court 2" fill />
         </div>
 
         <div className="projectDetailsText">
-          <h2>Alice Court I</h2>
+          <h2>Amazon Hotel</h2>
           <p>
-            Alice Court I is a luxury building project that offers a sophisticated living experience in a prime location. With exquisite design and state-of-the-art amenities, Alice Court I promises to provide residents with a comfortable and stylish lifestyle. The building boasts spacious and elegantly designed apartments, stunning views, and top-notch facilities.
+            Amazon Hotel is a property that contains 7 units apartments; 5 three bedroom apartments and 2 three bedroom apartments with boys&apos; quarters. It is located in a gated  and secure estate in Gbagada. It consists of features including; central power system with 24 hours electricity, facility management and CCTV, proper waste management, and stationary security personnel.
             <br /><br />
-            Whether you are looking for a peaceful retreat or a vibrant urban living experience, Alice Court I is the perfect choice for those seeking the very best in luxury living.
+            Whether you are looking for a peaceful retreat or a vibrant urban living experience, Alice Court II is the perfect choice for those seeking the very best in luxury living.
           </p>
 
           <div className="projectInfo">
@@ -77,7 +77,7 @@ export default function Alice_Court_1() {
           {imageNumber.map((e, i) => {
             return(
               <div key={i} className="imageContainer">
-                <Image src={`/images/Alice/Alice_${e}.png`} alt={`Alice_${e}`} fill style={{objectFit: "cover"}} />
+                <Image src={`/images/Alice_Court_2/${e}.jpg`} alt={`Alice_${e}`} fill style={{objectFit: "cover"}} />
               </div>
 
             )
@@ -88,7 +88,7 @@ export default function Alice_Court_1() {
         </div>
       </div>
       <div className="projectController">
-        <Link href={"/swimming-pool"}>
+        <Link href={"/alice-court-1"}>
           <div className="ctrlGrp">
             <div className="icon">
               <Image src={"/svgs/prev.svg"} alt="Prev" fill className="imageContain" />

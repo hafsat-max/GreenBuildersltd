@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from "@/styles/component.module.css"
 
-function TextField({placeholder, text}: {placeholder: string, text: string}) {
+function TextField({placeholder, text, name}: {placeholder: string, text: string, name: string}) {
   return (
-    <input className={styles.input} placeholder={placeholder} type={text} />
+    <input name={name} className={styles.input} placeholder={placeholder} type={text} />
   )
 }
 
