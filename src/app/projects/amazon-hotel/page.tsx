@@ -88,7 +88,7 @@ export default function Amazon_Hotel() {
         </div>
       </div>
       <div className="projectController">
-        <Link href={"/alice-court-1"}>
+        <Link href={"/projects/alice-court-1"}>
           <div className="ctrlGrp">
             <div className="icon">
               <Image src={"/svgs/prev.svg"} alt="Prev" fill className="imageContain" />
@@ -96,7 +96,7 @@ export default function Amazon_Hotel() {
             <p>Previous Project</p>
           </div>
         </Link>
-        <Link href={"/alice-court-2"}>
+        <Link href={"/projects/alice-court-2"}>
           <div className="ctrlGrp">
             <div className="icon">
               <Image src={"/svgs/next.svg"} alt="Prev" fill className="imageContain" />

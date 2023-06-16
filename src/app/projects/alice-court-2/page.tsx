@@ -88,7 +88,7 @@ export default function Alice_Court_2() {
         </div>
       </div>
       <div className="projectController">
-        <Link href={"/alice-court-1"}>
+        <Link href={"/projects/alice-court-1"}>
           <div className="ctrlGrp">
             <div className="icon">
               <Image src={"/svgs/prev.svg"} alt="Prev" fill className="imageContain" />
@@ -96,7 +96,7 @@ export default function Alice_Court_2() {
             <p>Previous Project</p>
           </div>
         </Link>
-        <Link href={"/amazon-hotel"}>
+        <Link href={"/projects/amazon-hotel"}>
           <div className="ctrlGrp">
             <div className="icon">
               <Image src={"/svgs/next.svg"} alt="Prev" fill className="imageContain" />
