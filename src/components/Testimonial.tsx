@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "@/styles/component.module.css"
 import Image from 'next/image'
 
-function Testimonial() {
+function Testimonial({ message, userName, position } : { message: string, userName: string, position?: string }) {
   return (
     <div className={styles.testimonialContainer}>
         <div className={styles.quote}>
@@ -12,10 +12,10 @@ function Testimonial() {
                 </svg>
             </div>
         </div>
-      <p>The quality of their work is simply exceptional. I was blown away by the level of craftsmanship and attention to detail that went into every aspect of the renovation. They truly exceeded my expectations in every way.</p>
+      <p>{message}</p>
       <div className={styles.user}>
-        <h4>Katy Grey</h4>
-        <h6>CEO Grey Industries</h6>
+        <h4>{userName}</h4>
+        <h6>{position}</h6>
       </div>
       <div className={styles.slider}>
         <div className={styles.dot}></div>

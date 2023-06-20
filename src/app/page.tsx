@@ -89,8 +89,8 @@ export default function Home() {
               <Image src={"/icons/building.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
             </div>
             <div className={styles.itemDetails}>
-              <h4>Building Construction</h4>
-              <p>We specialize in delivering construction projects to meet needs and expectations of our clients.</p>
+              <h4>Property Development</h4>
+              <p>Trust us to handle all aspects of your property development needs and turn your dreams into a stunning reality.</p>
             </div>
           </div>
           <div className={styles.listItem}>
@@ -98,17 +98,17 @@ export default function Home() {
               <Image src={"/icons/repair.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
             </div>
             <div className={styles.itemDetails}>
-              <h4>Building Repairs</h4>
-              <p>We understand the importance of timely and efficient repairs, therefore, we repair to bring buildings back to good shape.</p>
+              <h4>Facility Management</h4>
+              <p>With our expertise and attention to detail, we ensure your facility is well managed, and optimized for maximum productivity.</p>
             </div>
           </div>
           <div className={styles.listItem}>
             <div className={styles.imageContainer}>
-              <Image src={"/icons/demolition.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
+              <Image src={"/icons/management.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
             </div>
             <div className={styles.itemDetails}>
-              <h4>Demolition</h4>
-              <p>We provide professional and safe demolition services for a wide range of projects.</p>
+              <h4>Real Estate investment</h4>
+              <p>We offer personalized advice to help you invest with confidence and build a profitable real estate portfolio.</p>
             </div>
           </div>
           <div className={styles.listItem}>
@@ -116,8 +116,8 @@ export default function Home() {
               <Image src={"/icons/decor.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
             </div>
             <div className={styles.itemDetails}>
-              <h4>Luxury & Decor</h4>
-              <p>Our team of expert designers work closely with clients to bring their vision of luxury to life with elegance and sophistication.</p>
+              <h4>Real Estate consultant</h4>
+              <p>Trust our expertise in consulting to navigate the complexities of the real estate landscape and achieve success.</p>
             </div>
           </div>
           <div className={styles.listItem}>
@@ -125,13 +125,13 @@ export default function Home() {
               <Image src={"/icons/quality.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
             </div>
             <div className={styles.itemDetails}>
-              <h4>Quality Assessment</h4>
-              <p>With our team of expert assessors, we can get your properties assessed and give suggestions on what to do.</p>
+              <h4>Building Construction</h4>
+              <p>Experience the satisfaction of working with a reliable construction partner dedicated to bringing your building visions to life.</p>
             </div>
           </div>
           <div className={styles.listItem}>
             <div className={styles.imageContainer}>
-              <Image src={"/icons/management.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
+              <Image src={"/icons/demolition.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
             </div>
             <div className={styles.itemDetails}>
               <h4>Site Management</h4>
@@ -214,9 +214,9 @@ export default function Home() {
             <Image src={"/images/testimonial.png"} alt='Testimonial' fill style={{objectFit: "cover"}} />
           </div>
 
-          <Testimonial />
-          <Testimonial />
-          <Testimonial />
+          <Testimonial message={"My experience so far, doing business with GREENBUILDERS, has been fantastic! The quality of work, consistent communication, and on-time delivery of my project are exceptional. This will make me recommend Greenbuilder to anyone who needs a trustworthy construction partner."} userName={"Adedeji Agbelemoge"} position={"CEO Mike and Juli Flat Limited"} />
+          <Testimonial message={"My experience with Greenbuilders so far has been very impressive. Their service is top-notch, with good time delivery, the use of quality building materials, and great building designs. I would love to work with them again and would recommend them to anyone."} userName={"Bernadine Ikemelu"} />
+          
         </div>
 
       </section>

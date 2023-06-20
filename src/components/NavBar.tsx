@@ -49,7 +49,9 @@ function NavBar() {
                 </div>
             </div>
             <div className={styles.navCTA}>
-                <button>Book Appointment</button>
+                <Link href={"/contact"}>
+                    <button>Book Appointment</button>
+                </Link>
             </div>
             <div onClick={()=>showSideNavFunc()} className={styles.navToggle}>
                 <MenuOutlined /> 
