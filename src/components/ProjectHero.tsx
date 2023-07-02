@@ -13,7 +13,7 @@ import { Route } from 'next'
 function ProjectHero({tag, name, description, location, linkBase, project}: {tag: string, name: string, description: string, location: string, linkBase?: string, project?: boolean}) {
   return (
       <section className={styles.heroSection}>
-        <Image className={styles.heroImage} src={"/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
+        <Image className={styles.heroImage} src={"/images/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
         <div className={styles.heroDetails}>
           <p className={styles.heroDetailsTag}>{tag}</p>
           <h1 className={styles.heroDetailsTitle}>{name}</h1>

@@ -19,12 +19,16 @@ function Footer() {
                 <p>We believe, that your home should be your sanctuary, and we strive to make that a reality.</p>
 
                 <div className={styles.socials}>
-                    <div className={styles.social}>
-                        <Image src={"/svgs/facebook.svg"} alt='Facebbok' fill style={{objectFit: "contain", objectPosition: "center"}} />
-                    </div>
-                    <div className={styles.social}>
-                        <Image src={"/svgs/instagram.svg"} alt='instagram' fill style={{objectFit: "contain", objectPosition: "center"}} />
-                    </div>
+                    <Link href={"https://www.facebook.com/profile.php?id=100088686427628&mibextid=LQQJ4d"}>
+                        <div className={styles.social}>
+                            <Image src={"/svgs/facebook.svg"} alt='Facebbok' fill style={{objectFit: "contain", objectPosition: "center"}} />
+                        </div>                        
+                    </Link>
+                    <Link href={"https://instagram.com/greenbuilderslimited?igshid=MjEwN2IyYWYwYw=="}>
+                        <div className={styles.social}>
+                            <Image src={"/svgs/instagram.svg"} alt='instagram' fill style={{objectFit: "contain", objectPosition: "center"}} />
+                        </div>
+                    </Link>
                     <div className={styles.social}>
                         <Image src={"/svgs/linkedIn.svg"} alt='Linkedin' fill style={{objectFit: "contain", objectPosition: "center"}} />
                     </div>
@@ -41,10 +45,10 @@ function Footer() {
 
                     <div className={styles.listItems}>
                         <Link href={"#"}>Home</Link>
-                        <Link href={"#"}>About Us</Link>
+                        <Link href={"/about"}>About Us</Link>
                         <Link href={"#"}>Blog</Link>
                         <Link href={"#"}>FAQ</Link>
-                        <Link href={"#"}>Services</Link>
+                        <Link href={"/services"}>Services</Link>
                     </div>
                     
                 </div>
@@ -80,20 +84,23 @@ function Footer() {
                                 <p>91 Kildaire Street, Middlesborough TS1 4QY</p>
 
                                 <h6>NIGERIA</h6>
-                                <p>Suite B20, Unique Shopping Mall By Old Passport Office, Off Oba Akinjobi Way Ikeja GRA, Lagos</p>
+                                <p>3a Faramobi Ajike street, Anthony village.</p>
                             </div>
                             
                         </div>
                         <div className={styles.contactItems}>
                             <MobileOutlined />
                             <div className={styles.contactDetails}>
+                                <h6>NIGERIA</h6>
                                 <p>+234 812 041 1851</p>
+                                <h6>UNITED KINGDOM</h6>
+                                <p>+44 7707 218936</p>
                             </div>
                         </div>
                         <div className={styles.contactItems}>
                             <MailOutlined />
                             <div className={styles.contactDetails}>
-                                <p>contact@greenbuildersltd.com</p>
+                                <p>damilare@greenbuildersltd.com</p>
                             </div>
                         </div>
                     </div>

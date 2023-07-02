@@ -35,6 +35,14 @@ export default function Home() {
   ]
 
 
+  const propDev = [
+    {name: "Alice Court I", url: "/projects/alice-court-1", img: "/images/spotlight/lux1.png"},
+    {name: "Alice Court II", url: "/projects/alice-court-2", img: "/images/spotlight/lux2.png"},
+    {name: "Alice Court III", url: "/projects/alice-court-3", img: "/images/spotlight/lux3.png"},
+  ]
+
+
+
   return (
     <>
       <NavBar />
@@ -81,7 +89,60 @@ export default function Home() {
       <ProjectHero tag={"LUXURY, CLASS & EXCELLENCE"} name={"Alice Court I"} description={"Alice Court I is a luxury building project that offers a sophisticated living experience in a prime location. With exquisite design and state-of-the-art amenities, Alice Court I promises to provide residents with a comfortable and stylish lifestyle. The building boasts spacious and elegantly designed apartments, stunning views, and top-notch facilities ."} location={"Alice Court I, Gbagada Estate, Lagos."} linkBase='alice-court-1' project={true} />
 
       {/* We are Green Builders */}
-      <section className={styles.weAreSection}>
+      <section className={`${styles.weAreSection} noneTab`}>
+        <h2 className={styles.sectionTitle}>We Are GreenBuilders</h2>
+        <div className={styles.sectionList}>
+          <div className={styles.listItem}>
+            <div className={styles.imageContainer}>
+              <Image src={"/icons/building.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
+            </div>
+            <div className={styles.itemDetails}>
+              <h4>Property Development</h4>
+              <p>Trust us to handle all aspects of your property development needs and turn your dreams into a stunning reality.</p>
+            </div>
+          </div>
+          <div className={styles.listItem}>
+            <div className={styles.imageContainer}>
+              <Image src={"/icons/repair.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
+            </div>
+            <div className={styles.itemDetails}>
+              <h4>Facility Management</h4>
+              <p>With our expertise and attention to detail, we ensure your facility is well managed, and optimized for maximum productivity.</p>
+            </div>
+          </div>
+          <div className={styles.listItem}>
+            <div className={styles.imageContainer}>
+              <Image src={"/icons/management.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
+            </div>
+            <div className={styles.itemDetails}>
+              <h4>Real Estate investment</h4>
+              <p>We offer personalized advice to help you invest with confidence and build a profitable real estate portfolio.</p>
+            </div>
+          </div>
+
+        </div>
+        <div className={`${styles.sectionList_f} ${styles.sectionList}`}>
+          <div className={styles.listItem}>
+            <div className={styles.imageContainer}>
+              <Image src={"/icons/decor.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
+            </div>
+            <div className={styles.itemDetails}>
+              <h4>Real Estate consultant</h4>
+              <p>Trust our expertise in consulting to navigate the complexities of the real estate landscape and achieve success.</p>
+            </div>
+          </div>
+          <div className={styles.listItem}>
+            <div className={styles.imageContainer}>
+              <Image src={"/icons/quality.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
+            </div>
+            <div className={styles.itemDetails}>
+              <h4>BuildingConstruction</h4>
+              <p>Experience the satisfaction of working with a reliable construction partner dedicated to bringing your building visions to life.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={`${styles.weAreSection} noneDesktop`}>
         <h2 className={styles.sectionTitle}>We Are GreenBuilders</h2>
         <div className={styles.sectionList}>
           <div className={styles.listItem}>
@@ -125,20 +186,13 @@ export default function Home() {
               <Image src={"/icons/quality.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
             </div>
             <div className={styles.itemDetails}>
-              <h4>Building Construction</h4>
+              <h4>BuildingConstruction</h4>
               <p>Experience the satisfaction of working with a reliable construction partner dedicated to bringing your building visions to life.</p>
             </div>
           </div>
-          <div className={styles.listItem}>
-            <div className={styles.imageContainer}>
-              <Image src={"/icons/demolition.png"} alt='building' fill style={{objectFit: "contain", objectPosition: "top"}} />
-            </div>
-            <div className={styles.itemDetails}>
-              <h4>Site Management</h4>
-              <p>With us, you can be sure that projects will be completed on time, within budget, and to the highest standards of quality.</p>
-            </div>
-          </div>
+
         </div>
+
       </section>
 
       {/* About Us */}
@@ -203,7 +257,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.luxSection}>
-        <LuxuryProjects />
+        <LuxuryProjects projects={propDev} />
       </section>
       {/* Testimonial section */}
       <section className={styles.testimonialSection}>

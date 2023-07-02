@@ -15,6 +15,12 @@ import Carousel from '@/components/Carousel';
 import Footer from '@/components/Footer';
 import PageHero from '@/components/PageHero';
 
+const propDev = [
+  {name: "Alice Court I", url: "/projects/alice-court-1", img: "/images/spotlight/lux1.png"},
+  {name: "Alice Court II", url: "/projects/alice-court-2", img: "/images/spotlight/lux2.png"},
+  {name: "Alice Court III", url: "/projects/alice-court-3", img: "/images/spotlight/lux3.png"},
+]
+
 
 export default function Home() {
 
@@ -40,13 +46,13 @@ export default function Home() {
 
       <section className={styles.projects}>
         <h1>Property Development</h1>
-        <LuxuryProjects />
+        <LuxuryProjects projects={propDev} />
 
       </section>
 
       <section className={styles.projects}>
         <h1>Construction Projects</h1>
-        <LuxuryProjects />
+        <LuxuryProjects projects={propDev} />
 
       </section>
   

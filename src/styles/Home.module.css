@@ -130,12 +130,20 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+    justify-content: space-around;
+}
+
+.weAreSection .sectionList_f{
+    display: flex !important;
+    justify-content: space-around;
+    margin-top: 5rem;
 }
 
 .weAreSection .sectionList .listItem{
     display: flex;
     gap: 2rem;
     text-align: left;
+    max-width: 35rem;
 }
 
 .weAreSection .sectionList .listItem .imageContainer{
@@ -175,6 +183,7 @@
 
 .aboutSection .aboutDetails h6{
     color: var(--pryClr);
+    margin-bottom: 1rem;
 }
 
 .aboutSection .aboutDetails h2{
