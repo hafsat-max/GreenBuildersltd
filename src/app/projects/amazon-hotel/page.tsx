@@ -12,6 +12,13 @@ export default function Amazon_Hotel() {
 
   const imageNumber = [1, 2, 3, 4, 5, 6, 7, 8]
 
+  const propDev = [
+    {name: "Alice Court I", url: "/projects/alice-court-1", img: "/images/spotlight/lux1.png"},
+    {name: "Alice Court II", url: "/projects/alice-court-2", img: "/images/spotlight/lux2.png"},
+    {name: "Alice Court III", url: "/projects/alice-court-3", img: "/images/spotlight/lux3.png"},
+  ]
+
+
   return (
     <>
       <NavBar />
@@ -108,7 +115,7 @@ export default function Amazon_Hotel() {
 
       <div className="projects">
         <h1>Check Other Building Projects</h1>
-        <LuxuryProjects />
+        <LuxuryProjects projects={propDev} />
       </div>
 
 
