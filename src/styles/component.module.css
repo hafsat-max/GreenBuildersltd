@@ -53,7 +53,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-
+    background: #01591180;
 }
 
 .heroSection .heroImage {
