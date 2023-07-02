@@ -1,4 +1,12 @@
 .heroSection {
+    padding: 0;
+    position: relative;
+    background: #01591180;
+    /* overflow: hidden; */
+
+}
+
+.heroSection .innerContainer{
     padding: 6rem 15rem;
     display: flex;
     justify-content: space-between;
@@ -6,13 +14,17 @@
     gap: 20rem;
     position: relative;
     width: 100%;
-    background: #01591180;
-    overflow: hidden;
-
+    
 }
 
 .heroSection .heroImage {
-    z-index: -1;
+    z-index: -3;
+}
+
+.heroSection video{
+    z-index: -2;
+    object-fit: cover;
+    width: 100%;
 }
 
 .heroSection .heroDetails {
@@ -129,7 +141,7 @@
 }
 
 @media screen and (max-width: 650px) {
-    .heroSection {
-        padding: 3rem;
+    .heroSection .innerContainer {
+        padding: 3rem !important;
     }
 }
