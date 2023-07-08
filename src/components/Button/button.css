@@ -1,0 +1,11 @@
+.buttonComponent{
+    padding: 1rem 2rem;
+    background-color: var(--secClr);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: var(--Poppins);
+    font-weight: 500;
+    max-width: fit-content;
+    margin: 2rem 0;
+}
