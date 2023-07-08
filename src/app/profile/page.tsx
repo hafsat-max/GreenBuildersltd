@@ -26,7 +26,7 @@ export default function Profile() {
         <section className={styles.profileSection}>
             <div className={styles.ceoDetails}>
                 <div className={styles.ceoImageContainer}>
-                    <Image src={"/images/heroImages/ceo.png"} alt='Awonuga Oluwadamilare Timothy' fill style={{objectFit: "cover"}} />
+                    <Image src={"/images/HeroImages/ceo.png"} alt='Awonuga Oluwadamilare Timothy' fill style={{objectFit: "cover"}} />
                 </div>
                 <div className={styles.textDetails}>
                     <h2>Awonuga Oluwadamilare Timothy <span>(CORBON, CIOB)</span></h2>
