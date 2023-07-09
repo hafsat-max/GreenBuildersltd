@@ -25,7 +25,7 @@ export default function Alice_Court_2() {
 
       <div className="project-details">
         <div className="projectDetailsImage">
-          <Image className="image" src={"/images/Alice_Court_2/1.jpg"} alt="Alice Court 2" fill />
+          <Image className="image" src={"/images/Alice_Court_2/2.jpg"} alt="Alice Court 2" fill />
         </div>
 
         <div className="projectDetailsText">
