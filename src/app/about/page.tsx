@@ -61,7 +61,7 @@ export default function Home() {
         <section className={styles.aboutSection}>
             <h2>“We are a Young, Vibrant & Innovative brand changing the face of the  real estate industry....”</h2>
           <div className={styles.aboutImage}>
-            <Image src={"/images/ceo1.png"} alt='CEO' fill style={{objectFit: "cover"}} />
+            <Image src={"/images/HeroImages/ceo.png"} alt='CEO' fill style={{objectFit: "cover"}} />
             <div className={styles.yrsOfExperience}>
               <h1>12+</h1>
               <p>YEARS OF EXPERIENCE</p>
