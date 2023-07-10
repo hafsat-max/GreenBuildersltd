@@ -42,12 +42,12 @@ export default function Home() {
             <div className={styles.aboutImage}>
             <div className={styles.absoluteImageContainer}>
                 <div className={styles.imageContainer}>
-                <Image src={"/images/laptopBook.png"} alt='About1' fill style={{objectFit: "cover"}} />
+                <Image src={`/images/Alice/Alice_1.png`} alt='About1' fill style={{objectFit: "cover"}} />
                 </div>
             </div>
             <div className={styles.absoluteImageContainer2}>
                 <div className={styles.imageContainer}>
-                <Image src={"/images/roadConstruction.png"} alt='About1' fill style={{objectFit: "cover"}} />
+                <Image src={"/images/Alice_3/4.jpg"} alt='About1' fill style={{objectFit: "cover"}} />
                 </div>
             </div>
             <div className={styles.aboutCTAStyle}>
@@ -80,7 +80,7 @@ export default function Home() {
               <button>View Projects →</button>  
             </div>
             <div className={styles.devImage}>
-              <Image src={"/images/services/development/main.png"} alt="Development" fill style={{objectFit: "cover"}} />
+              <Image src={`/images/Alice/Alice_1.png`} alt="Development" fill style={{objectFit: "cover"}} />
             </div>
 
             <div className={styles.sideImg}>
@@ -97,7 +97,7 @@ export default function Home() {
               </button>
             </div>
           </div>}
-          {activeCard === "PrM" && <div className={styles.serviceDetails}>
+          {activeCard === "CoS" && <div className={styles.serviceDetails}>
             <div className={styles.devText}>
               <h2>Consultancy Service</h2>
               <p>With our deep understanding of the construction industry and years of experience, we offer consultancy services that cover various aspects of the project lifecycle. Whether you are planning a new construction project, seeking to optimize an existing development, or facing specific challenges within your real estate portfolio, our team of experienced consultants is ready to assist you.
@@ -106,7 +106,7 @@ export default function Home() {
               <button>View Projects →</button> 
             </div>
             <div className={styles.devImage}>
-              <Image src={"/images/services/consultancy/main.png"} alt="Development" fill style={{objectFit: "cover"}} />
+              <Image src={"/images/Alice_Court_2/2.jpg"} alt="Development" fill style={{objectFit: "cover"}} />
             </div>
 
             <div className={styles.sideImg}>
@@ -123,7 +123,7 @@ export default function Home() {
               </button>
             </div>
           </div>}
-          {activeCard === "CoS" && <div className={styles.serviceDetails}>
+          {activeCard === "PrM" && <div className={styles.serviceDetails}>
             <div className={styles.devText}>
               <h2>Property Management</h2>
               <p>At GreenBuilders Nig. Ltd., we take pride in delivering professional and personalized property management services. With our extensive knowledge, attention to detail, and commitment to excellence, you can trust us to protect your investment and ensure its long-term success. Experience the difference of our real estate property management services and let us help you unlock the full potential of your properties.
@@ -132,7 +132,7 @@ export default function Home() {
               <button>View Projects →</button> 
             </div>
             <div className={styles.devImage}>
-              <Image src={"/images/services/property/main.png"} alt="Development" fill style={{objectFit: "cover"}} />
+              <Image src={"/images/Alice_4/1.png"} alt="Development" fill style={{objectFit: "cover"}} />
             </div>
 
             <div className={styles.sideImg}>
