@@ -7,7 +7,8 @@ import {
   RightOutlined,
   EnvironmentOutlined,
   CaretRightFilled,
-  PlusOutlined
+  PlusOutlined,
+  ArrowRightOutlined
 } from "@ant-design/icons"
 import LuxuryProjects from '@/components/LuxuryProjects';
 import Testimonial from '@/components/Testimonial';
@@ -245,7 +246,7 @@ export default function Home() {
                 <p>LUXURY/COMMERCIAL</p>
                 <h4>Amazon Hotel</h4>
                 <div className={styles.overlayAction}>
-                  <PlusOutlined />
+                  <ArrowRightOutlined />
                 </div>
               </div>
             </div>
