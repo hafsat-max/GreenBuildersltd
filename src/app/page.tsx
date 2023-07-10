@@ -207,12 +207,12 @@ export default function Home() {
         <div className={styles.aboutImage}>
           <div className={styles.absoluteImageContainer}>
             <div className={styles.imageContainer}>
-              <Image src={"/images/laptopBook.png"} alt='About1' fill style={{objectFit: "cover"}} />
+              <Image src={`/images/Alice/Alice_1.png`} alt='About1' fill style={{objectFit: "cover"}} />
             </div>
           </div>
           <div className={styles.absoluteImageContainer2}>
             <div className={styles.imageContainer}>
-              <Image src={"/images/roadConstruction.png"} alt='About1' fill style={{objectFit: "cover"}} />
+              <Image src={"/images/Alice_3/4.jpg"} alt='About1' fill style={{objectFit: "cover"}} />
             </div>
           </div>
           <div className={styles.aboutCTAStyle}>
@@ -230,17 +230,17 @@ export default function Home() {
         <h1>We Build Luxury</h1>
         <div className={styles.spotlightContainer}>
           <div className={styles.longImageContainer}> 
-            <Image src={"/images/spotlight/spot1.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+            <Image src={`/images/Alice/Alice_1.png`} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
           </div>
           <div className={styles.imagesContainer}>
             <div className={styles.imageContainer}> 
-              <Image src={"/images/spotlight/spot2.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+              <Image src={"/images/Alice_Court_2/2.jpg"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
             </div>
             <div className={styles.imageContainer}> 
-              <Image src={"/images/spotlight/spot3.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+              <Image src={"/images/Alice_3/4.jpg"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
             </div>
             <div className={styles.imageContainer}> 
-              <Image src={"/images/spotlight/spot5.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+              <Image src={"/images/Alice_4/1.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
               <div className={styles.spotOverlay}>
                 <p>LUXURY/COMMERCIAL</p>
                 <h4>Amazon Hotel</h4>
@@ -250,7 +250,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.imageContainer}> 
-              <Image src={"/images/spotlight/spot4.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+              <Image src={"/images/Alice_Court_2/3.jpg"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
             </div>
           </div>
         </div>
