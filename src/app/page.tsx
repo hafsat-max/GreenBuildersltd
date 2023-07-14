@@ -240,15 +240,17 @@ export default function Home() {
             <div className={styles.imageContainer}> 
               <Image src={"/images/Alice_3/4.jpg"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
             </div>
-            <div className={styles.imageContainer}> 
-              <Image src={"/images/Alice_4/1.png"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
-              <div className={styles.spotOverlay}>
-                <p>LUXURY/COMMERCIAL</p>
-                <h4>Amazon Hotel</h4>
-                <div className={styles.overlayAction}>
-                  <ArrowRightOutlined />
+            <div className={styles.imageContainer}>   
+              <Image src={`/images/Alice/Alice_1.png`} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+              <Link href={"/projects/alice-court-1"}>
+                  <div className={styles.spotOverlay}>
+                    <p>LUXURY, CLASS & EXCELLENCE</p>
+                    <h4>Alice Court I</h4>
+                    <div className={styles.overlayAction}>
+                      <ArrowRightOutlined />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
             <div className={styles.imageContainer}> 
               <Image src={"/images/Alice_Court_2/3.jpg"} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
@@ -257,7 +259,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.luxSection}>
-        <LuxuryProjects projects={propDev} />
+        <LuxuryProjects/>
       </section>
       {/* Testimonial section */}
       <section className={styles.testimonialSection}>
@@ -269,7 +271,11 @@ export default function Home() {
           </div>
 
           <Testimonial message={"My experience so far, doing business with GREENBUILDERS, has been fantastic! The quality of work, consistent communication, and on-time delivery of my project are exceptional. This will make me recommend Greenbuilder to anyone who needs a trustworthy construction partner."} userName={"Adedeji Agbelemoge"} position={"CEO Mike and Juli Flat Limited"} />
+
+          <Testimonial message={"Greenbuilders restored my trust in the real estate. I recommend this wonderful company without any reservation. The weekly update I get on my transactions from them is fantastic, the quality of construction work when I visited Nigeria was also impressive. So far, I am happy with delivery of service from the Greenbuilders."} userName={"Tunmise Ayodele, PhD"} />
+
           <Testimonial message={"My experience with Greenbuilders so far has been very impressive. Their service is top-notch, with good time delivery, the use of quality building materials, and great building designs. I would love to work with them again and would recommend them to anyone."} userName={"Bernadine Ikemelu"} />
+
           
         </div>
 

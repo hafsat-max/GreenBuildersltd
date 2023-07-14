@@ -100,7 +100,7 @@ function Footer() {
                         <div className={styles.contactItems}>
                             <MailOutlined />
                             <div className={styles.contactDetails}>
-                                <p>damilare@greenbuildersltd.com</p>
+                                <p>contact@greenbuildersltd.com</p>
                             </div>
                         </div>
                     </div>

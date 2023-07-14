@@ -68,7 +68,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.aboutText}>
-            <h2>“We are a Young, Vibrant & Innovative brand changing the face of the  real estate industry....”</h2>
+            <h2>“We are a Glowing, Vibrant & Innovative brand changing the face of the  real estate industry....”</h2>
             <div className={styles.aboutDetails}>
               <p>Experience the excellence of GreenBuilders Nig. Ltd., the leading option for superior construction solutions. Our skilled team of professionals is committed to delivering outstanding service to each and every customer. Whether it&apos;s residential or commercial undertakings, we possess the proficiency, abilities, and know-how to ensure successful project completion.</p>
               <h5>Oluwadamilare Awonuga <span className={styles.qualifications}>(PMP, Prince2, CIOB,CORBON, MNIOB)</span></h5>

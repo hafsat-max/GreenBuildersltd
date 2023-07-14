@@ -36,12 +36,12 @@ export default function Alice_Court_1() {
             Whether you are looking for a peaceful retreat or a vibrant urban living experience, Alice Court I is the perfect choice for those seeking the very best in luxury living.
           </p>
 
-          <div className="projectInfo">
+          {/* <div className="projectInfo">
             <h3>Project Info</h3>
             <h5>Client: <span>John Doe</span></h5>
             <h5>Category: <span>Construction Business</span></h5>
             <h5>Completed on: <span>20 January 2022</span></h5>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="moreInfo">
@@ -49,32 +49,21 @@ export default function Alice_Court_1() {
           <div className="infoIcon">
             <Image src={"/svgs/projects/dimension.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
           </div>
-          <p>2300 Square Feet</p>
+          <p>720 Square Feet</p>
         </div>
         <div className="info">
           <div className="infoIcon">
             <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
           </div>
-          <p>20 Bedrooms</p>
+          <p>1 unit of 4 Bedrooms fully detached house</p>
         </div>
         <div className="info">
           <div className="infoIcon">
-            <Image src={"/svgs/projects/car.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+            <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
           </div>
-          <p>1 Garage</p>
+          <p>2 unit of 4 Bedrooms semi-detached house</p>
         </div>
-        <div className="info">
-          <div className="infoIcon">
-            <Image src={"/svgs/projects/time.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
-          </div>
-          <p>24/7 Power Supply</p>
-        </div>
-        <div className="info">
-          <div className="infoIcon">
-            <Image src={"/svgs/projects/bathroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
-          </div>
-          <p>5 Bathrooms</p>
-        </div>
+
       </div>
 
       <div className="gallery">
@@ -93,7 +82,7 @@ export default function Alice_Court_1() {
         </div>
       </div>
       <div className="projectController">
-        <Link href={"/projects/swimming-pool"}>
+        <Link href={"/projects/alice-court-3"}>
           <div className="ctrlGrp">
             <div className="icon">
               <Image src={"/svgs/prev.svg"} alt="Prev" fill className="imageContain" />
@@ -113,7 +102,7 @@ export default function Alice_Court_1() {
 
       <div className="projects">
         <h1>Check Other Building Projects</h1>
-        <LuxuryProjects projects={propDev} />
+        <LuxuryProjects />
       </div>
 
 

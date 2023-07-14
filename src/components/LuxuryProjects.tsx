@@ -4,13 +4,20 @@ import Image from 'next/image'
 import {PlusOutlined, ArrowRightOutlined} from "@ant-design/icons"
 import Link from 'next/link'
 
-function LuxuryProjects({projects}: {projects: {name: string, url: string, img: string}[]}) {
+function LuxuryProjects() {
+
+    
+const propDev = [
+  {name: "Alice Court I", url: "/projects/alice-court-1", img: "/images/Alice/Alice_1.png"},
+  {name: "Alice Court II", url: "/projects/alice-court-2", img: "/images/Alice_Court_2/2.jpg"},
+  {name: "Alice Court III", url: "/projects/alice-court-3", img: "/images/Alice_3/4.jpg"}
+]
   return (
     <div className={styles.luxuryProjectsContainer}>
-        {projects.map((e, i)=>{
+        {propDev.map((e, i)=>{
             return(
                 <div key={i} className={styles.imageContainer}> 
-                    <Image src={e.img} alt='Spotlight' fill style={{objectFit: "cover", objectPosition: "center"}} />
+                    <Image src={e.img} alt={e.name} fill style={{objectFit: "cover", objectPosition: "center"}} />
                     <div className={styles.spotOverlay}>
                         <p>Luxury Apartment</p>
                         <h4>{e.name}</h4>
