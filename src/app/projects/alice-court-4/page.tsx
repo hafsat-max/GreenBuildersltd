@@ -114,7 +114,7 @@ export default function Alice_Court_4() {
 
       <div className="projects">
         <h1>Check Other Building Projects</h1>
-        <LuxuryProjects projects={propDev} />
+        <LuxuryProjects />
       </div>
 
 
