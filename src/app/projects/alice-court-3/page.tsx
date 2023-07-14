@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import ProjectHero from '@/components/ProjectHero';
 import Image from "next/image";
 import LuxuryProjects from "@/components/LuxuryProjects";
+import MapContainer from "@/components/MapContainer";
 
 
 export default function Alice_Court_3() {
@@ -73,7 +74,7 @@ export default function Alice_Court_3() {
           })}
         </div>
         <div className="map">
-          <Image src={"/map.png"} alt={"Map"} fill className="image" />
+          <MapContainer src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.694092216981!2d3.3756147!3d6.560245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d15991fbf5f%3A0xab9be6e119a964e!2sALICE%20COURTS%203!5e0!3m2!1sen!2sng!4v1689376031572!5m2!1sen!2sng" />
         </div>
       </div>
       <div className="projectController">
