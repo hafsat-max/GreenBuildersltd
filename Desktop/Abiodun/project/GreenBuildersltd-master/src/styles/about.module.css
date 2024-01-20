@@ -1,0 +1,357 @@
+.aboutSection{
+    padding: 5rem 15rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.aboutSection > h2{
+    display: none;
+    text-align: center;
+}
+
+.aboutSection .aboutImage{
+    position: relative;
+    width: 24rem;
+    height: 40rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+}
+
+.aboutSection .aboutImage .yrsOfExperience{
+    z-index: 10;
+    background-color: #00000090;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
+    max-width: 70%;
+    color: var(--white);
+}
+
+.aboutSection .aboutImage .yrsOfExperience h1{
+    font-size: 5rem;
+    font-family: var(--Kanit);
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.aboutSection .aboutImage .yrsOfExperience p{
+    font-size: 1rem;
+    font-family: var(--Kanit);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.aboutSection .aboutText{
+    font-family: var(--Kanit);
+}
+
+.aboutSection .aboutText h2{
+    color: var(--secClr);
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.aboutSection .aboutText .aboutDetails{
+    padding: 3rem;
+    background: #80808010;
+    margin-top: 2rem;
+}
+
+.aboutSection .aboutText .aboutDetails p{
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.aboutSection .aboutText .aboutDetails h5{
+    margin-top: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.aboutSection .aboutText .aboutDetails h5 .qualifications{
+    font-size: 70%;
+}
+
+.aboutSection .aboutText .aboutDetails h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+/* Mission Section */
+.missionSection{
+    position: relative;
+    min-height: 60rem;
+    padding: 5rem 15rem;
+}
+
+.missionSection .missionImage{
+    z-index: -1;
+}
+
+.missionSection .missionDetails{
+    z-index: 1;
+}
+
+.missionSection .missionDetails h1{
+    font-family: var(--Neuton);
+    font-size: 10rem;
+    font-weight: 700;
+    z-index: 12;
+    color: var(--white);
+    max-width: 12ch;
+    padding-top: 10rem;
+}
+
+.missionSection .missionDetails .goals{
+    font-family: var(--Kanit);
+    padding: 4rem;
+    border-left: 1px solid var(--pryClr);
+    margin-bottom: 1rem;
+    max-width: 40rem;
+    position: absolute;
+}
+
+.missionSection .missionDetails .mission{
+    right: 8rem;
+    top: 8rem;
+}
+
+.missionSection .missionDetails .vission{
+    right: 15rem;
+    bottom: 4rem;
+}
+
+.missionSection .missionDetails .goals h6{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--pryClr);
+}
+
+.missionSection .missionDetails .goals h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secClr);
+}
+
+.missionSection .missionDetails .goals p{
+    font-weight: 400;
+}
+
+.staffsSection{
+    padding: 10rem 15rem;
+}
+
+.staffsSection h1{
+    text-align: center;
+    font-size: 10rem;
+    font-family: var(--Neuton);
+    font-weight: 500;
+}
+
+.staffsSection > p{
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--Jakarta);
+    font-weight: 500;
+    color: var(--pryClr);
+}
+
+.staffsSection .staffs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    overflow-x: scroll;
+    font-family: var(--Jakarta);
+    margin: 4rem 5rem;
+    padding: 2rem 0;
+}
+
+.staffsSection .staffs::-webkit-scrollbar {
+    display: none;
+}
+
+.staffsSection .staffs .staff:last-child{
+    border-top: 1.3rem solid var(--pryClr);
+    background-color: var(--white);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+}
+
+.staffsSection .staffs .staff:last-child p{
+    font-weight: 800;
+    line-height: 1.4;
+    color: var(--black);
+    font-size: 2rem;
+    margin: 3rem 1rem;
+}
+
+.staffsSection .staffs .staff:last-child button{
+    padding: 1rem 2rem;
+    background: var(--secClr);
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.staffsSection .staffs .staff .staffImage{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.staffsSection .staffs .staff h4{
+    margin-top: 1rem;
+}
+
+.staffsSection .staffs .staff p{
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color: grey;
+}
+
+@media screen and (max-width: 1100px) {
+    .missionSection .missionDetails h1{
+        font-size: 6rem;
+    }
+
+    .staffsSection{
+        padding: 5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutSection{
+        padding: 5rem 8rem;
+    }
+    
+    .aboutSection .aboutText h2{
+        font-size: 2.5rem;
+    }
+
+    .missionSection{
+        padding: 5rem 8rem;
+    }
+
+    .missionSection .missionDetails .goals{
+        position: initial;
+        margin: 2rem 0;
+    }
+
+    .missionSection .missionDetails h1{
+        max-width: max-content;
+        padding-top: 2rem;
+    }
+
+    .staffsSection .staffs {
+        display: flex;
+        gap: 3rem;
+        margin: 4rem 5rem;
+        padding: 2rem 0;
+    }
+
+    .staffsSection .staffs .staff{
+        min-width: 25rem;
+    }
+
+    .staffsSection h1{
+        line-height: 1;
+        font-size: 6rem;
+    }
+
+    .staffsSection p{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .aboutSection{
+        padding: 5rem 3rem;
+    }
+    
+    .aboutSection .aboutText .aboutDetails p{
+        font-size: .9rem;
+    }
+    
+    .aboutSection .aboutText .aboutDetails h5{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .aboutSection .aboutText h2{
+        font-size: 2rem;
+    }
+
+
+    .staffsSection .staffs{
+        margin: 2rem 0rem;
+    }
+
+    .staffsSection .staffs .staff{
+        min-width: 20rem;
+    }
+
+    .staffsSection h1{
+        line-height: 1;
+        font-size: 5rem;
+    }
+
+    .staffsSection p{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .aboutSection{
+        padding: 5rem 3rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    
+    .aboutSection > h2{
+        display: block;
+        color: var(--secClr);
+        font-size: 2rem;
+        line-height: 1.2;
+        font-family: var(--Kanit);
+    }
+
+    
+    .aboutSection .aboutText .aboutDetails p{
+        font-size: .9rem;
+    }
+    
+    .aboutSection .aboutText .aboutDetails h5{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .aboutSection .aboutText h2{
+        font-size: 2rem;
+        display: none;
+    }
+
+    .missionSection{
+        padding: 3rem;
+    }
+
+    .missionSection .missionDetails h1{
+        font-size: 4rem;
+    }
+
+    .missionSection .missionDetails .goals{
+        padding: 2rem;
+    }
+
+
+    .staffsSection h1{
+        line-height: 1;
+        font-size: 4rem;
+    }
+}

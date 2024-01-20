@@ -1,0 +1,120 @@
+.contactCards{
+    margin: 5rem 7.5rem;
+    padding: 0 7.5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    border-bottom: 1px solid var(--pryClr);
+}
+
+.contactCards .contactGrp {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+.contactCards .contactGrp:nth-child(2){
+    margin-top: 2rem;
+}
+
+.contactCards .contactGrp .icon{
+    position: relative;
+    min-width: 4rem;
+    height: 4rem;
+    background-color: var(--secClr);
+}
+
+.contactForm{
+    padding: 5rem 15rem;
+}
+
+.contactForm .contactGrp{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.contactForm button{
+    padding: 1rem 2rem;
+    background-color: var(--pryClr);
+    outline: none;
+    border: none;
+    color: var(--white);
+    font-family: var(--Kanit);
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.mapSection{
+    margin: 5rem 15rem;
+}
+
+.mapSection .map{
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+}
+
+.mapSection .map iframe{
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+    .contactCards{
+        margin: 5rem 5rem;
+        padding: 0 2.5rem 5rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contactCards{
+        margin: 5rem 3rem;
+        padding: 0 1rem 5rem;
+
+    }
+
+    .contactForm {
+        padding: 5rem 8rem;
+    }
+
+    .contactForm .contactGrp {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .mapSection{
+        margin: 5rem 8rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contactCards{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+        
+    .contactForm{
+        padding: 5rem;
+    }
+
+    .contactForm .contactGrp{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+        
+    .contactForm{
+        padding: 5rem 3rem;
+    }
+
+    .mapSection{
+        margin: 3rem;
+    }
+}
