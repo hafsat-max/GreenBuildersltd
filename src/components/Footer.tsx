@@ -22,7 +22,7 @@ function Footer() {
             />
           </div>
           <p>
-            We believe, that your home should be your sanctuary, and we strive
+            We believe that your home should be your sanctuary, and we strive
             to make that a reality.
           </p>
 
