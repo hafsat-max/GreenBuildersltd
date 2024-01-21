@@ -11,7 +11,7 @@ import MapContainer from "@/components/MapContainer";
 
 export default function Alice_Court_2() {
 
-  const imageNumber = [1, 2, 3, 4, 5, 6, 7, 8]
+  const imageNumber = [ 2, 3, 4, 5, 6, 7, 8, 9]
 
 
   return (
@@ -22,7 +22,7 @@ export default function Alice_Court_2() {
 
       <div className="project-details">
         <div className="projectDetailsImage">
-          <Image className="image" src={"/images/Alice_Court_2/2.jpg"} alt="Alice Court 2" fill />
+          <Image className="image" src={"/images/Alice_Court_2/2.jpeg"} alt="Alice Court 2" fill />
         </div>
 
         <div className="projectDetailsText">
@@ -79,7 +79,7 @@ export default function Alice_Court_2() {
           {imageNumber.map((e, i) => {
             return(
               <div key={i} className="imageContainer">
-                <Image src={`/images/Alice_Court_2/${e}.jpg`} alt={`Alice_${e}`} fill style={{objectFit: "cover"}} />
+                <Image src={`/images/Alice_Court_2/${e}.jpeg`} alt={`Alice_${e}`} fill style={{objectFit: "cover"}} />
               </div>
 
             )
