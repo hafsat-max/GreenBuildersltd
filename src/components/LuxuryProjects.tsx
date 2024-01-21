@@ -8,7 +8,7 @@ function LuxuryProjects() {
 
     
 const propDev = [
-  {name: "Alice Court I", url: "/projects/alice-court-1", img: "/images/Alice/Alice_1.png"},
+  {name: "Alice Court I", url: "/projects/alice-court-1", img: "/images/Alice/1.jpg"},
   {name: "Alice Court II", url: "/projects/alice-court-2", img: "/images/Alice_Court_2/10.jpeg"},
   {name: "Alice Court III", url: "/projects/alice-court-3", img: "/images/Alice_3/4.jpg"}
 ]

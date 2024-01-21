@@ -26,7 +26,7 @@ export default function Alice_Court_1() {
 
       <div className="project-details">
         <div className="projectDetailsImage">
-          <Image className="image" src={`/images/Alice/Alice_1.png`} alt="Alice Court 1" fill />
+          <Image className="image" src={`/images/Alice/1.jpg`} alt="Alice Court 1" fill />
         </div>
 
         <div className="projectDetailsText">
@@ -72,7 +72,7 @@ export default function Alice_Court_1() {
           {imageNumber.map((e, i) => {
             return(
               <div key={i} className="imageContainer">
-                <Image src={`/images/Alice/Alice_${e}.png`} alt={`Alice_${e}`} fill style={{objectFit: "cover"}} />
+                <Image src={`/images/Alice/${e}.jpg`} alt={`Alice court I`} fill style={{objectFit: "cover"}} />
               </div>
 
             )
