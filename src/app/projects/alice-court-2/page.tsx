@@ -28,11 +28,10 @@ export default function Alice_Court_2() {
         <div className="projectDetailsText">
           <h2>Alice Court II</h2>
           <p>
-            Alice Court  II is a property that contains 7 units apartments; 5 three bedroom apartments and 2 three bedroom apartments with boys&apos; quarters. It is located in a gated  and secure estate in Gbagada. It consists of features including; central power system with 24 hours electricity, facility management and CCTV, proper waste management, and stationary security personnel.
+            Alice Court  II is an exquisite property that contains 9 units apartments; 7 three bedroom apartments and 2 three bedroom apartments with boys&apos; quarters. It is located in a gated  and secure estate in Gbagada. It consists of features including; central power system with 24 hours electricity, facility management and CCTV, proper waste management, and stationary security personnel.
             <br /><br />
             Whether you are looking for a peaceful retreat or a vibrant urban living experience, Alice Court II is the perfect choice for those seeking the very best in luxury living.
           </p>
-
           {/* <div className="projectInfo">
             <h3>Project Info</h3>
             <h5>Client: <span>John Doe</span></h5>

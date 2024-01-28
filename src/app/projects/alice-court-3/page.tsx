@@ -11,13 +11,13 @@ import MapContainer from "@/components/MapContainer";
 
 export default function Alice_Court_3() {
 
-  const imageNumber = [1, 2, 3, 4, 5, 6, 7, 8]
+  const imageNumber = [1, 2, 3, 4]
 
   return (
     <>
       <NavBar />
       {/* Hero Section */}
-      <ProjectHero tag={"LUXURY, CLASS & EXCELLENCE"} name={"Alice Court III"} description={"Alice Court  III is a property that contains 7 units apartments; 5 three bedroom apartments and 2 three bedroom apartments with boys' quarters. It is located in a gated  and secure estate in Gbagada. It consists of features including; central power system with 24 hours electricity, facility management and CCTV, proper waste management, and stationary security personnel."} location={"Josodat Estate, Gbagada, Lagos."} />
+      <ProjectHero tag={"LUXURY, CLASS & EXCELLENCE"} name={"Alice Court III"} description={""} location={"5, Ejikeme Nzeh St, Anthony, Lagos."} />
 
       <div className="project-details">
         <div className="projectDetailsImage">
@@ -27,11 +27,9 @@ export default function Alice_Court_3() {
         <div className="projectDetailsText">
           <h2>Alice Court III</h2>
           <p>
-            Alice Court  II is a property that contains 7 units apartments; 5 three bedroom apartments and 2 three bedroom apartments with boys&apos; quarters. It is located in a gated  and secure estate in Gbagada. It consists of features including; central power system with 24 hours electricity, facility management and CCTV, proper waste management, and stationary security personnel.
-            <br /><br />
-            Whether you are looking for a peaceful retreat or a vibrant urban living experience, Alice Court II is the perfect choice for those seeking the very best in luxury living.
+            Alice Court  III is a premium sophisticated 4 Bedroom Duplex on ground + 2 floors in Anthony Garden City, Anthony Village, Maryland Lagos. ALICE COURT III offers a private enclave of luxury contemporary residences, defining style of living, elegance and beauty. <br /><br /> To bring this exquisite property to life, Green Builders Limited appointed renowned architects to design this elegant piece of art with beautifully proportioned floor plans.  <br /><br />These masters of contemporary design have created an exquisite beauty for the residents. It was created for the elites who are dissatisfied with just the ordinary homes.This exclusive luxurious 2 Floor condominium with features to help you live a private indoor-outdoor lifestyle. <br /><br /> Unlike other projects, each unit comes with a wraparound terrace garden designed sustainability in mind - clean air, natural light and closeness to nature.
           </p>
-{/* 
+          {/* 
           <div className="projectInfo">
             <h3>Project Info</h3>
             <h5>Client: <span>John Doe</span></h5>
@@ -43,21 +41,21 @@ export default function Alice_Court_3() {
       <div className="moreInfo">
         <div className="info">
           <div className="infoIcon">
-            <Image src={"/svgs/projects/dimension.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+            <Image src={"/svgs/projects/dimension.svg"} alt="Dimension" fill style={{ objectFit: "contain" }} />
           </div>
           <p>800 Square Feet</p>
         </div>
         <div className="info">
           <div className="infoIcon">
-            <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+            <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{ objectFit: "contain" }} />
           </div>
           <p>7 units of 3 Bedrooms</p>
         </div>
         <div className="info">
           <div className="infoIcon">
-            <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
+            <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{ objectFit: "contain" }} />
           </div>
-          <p>2 units of 4 Bedrooms Pent House</p>
+          <p>2 units of 4 Bedrooms Penthouse</p>
         </div>
 
       </div>
@@ -65,9 +63,9 @@ export default function Alice_Court_3() {
       <div className="gallery">
         <div className="images">
           {imageNumber.map((e, i) => {
-            return(
+            return (
               <div key={i} className="imageContainer">
-                <Image src={`/images/Alice_3/${e}.jpg`} alt={`Alice_${e}`} fill style={{objectFit: "cover"}} />
+                <Image src={`/images/Alice_3/${e}.jpeg`} alt={`Alice_${e}`} fill style={{ objectFit: "cover" }} />
               </div>
 
             )
