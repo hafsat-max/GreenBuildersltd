@@ -374,7 +374,7 @@ export default function Home() {
             one, or construct a commercial building, we have the skills and
             expertise to handle any project, big or small.
           </p>
-          <Link href={"/about"}>
+          <Link href={"/about"} className='cursor-pointer'>
             <button>Learn more →</button>
           </Link>
         </div>
@@ -392,7 +392,7 @@ export default function Home() {
           <div className={styles.absoluteImageContainer2}>
             <div className={styles.imageContainer}>
               <Image
-                src={"/images/Alice_3/4.jpg"}
+                src={"/images/Alice_3/4.jpeg"}
                 alt="About1"
                 fill
                 style={{ objectFit: "cover" }}
@@ -415,7 +415,7 @@ export default function Home() {
         <div className={styles.spotlightContainer}>
           <div className={styles.longImageContainer}>
             <Image
-              src={`/images/Alice/Alice_1.png`}
+              src={`/images/Alice_3/3.jpeg`}
               alt="Spotlight"
               fill
               style={{ objectFit: "cover", objectPosition: "center" }}
@@ -424,31 +424,31 @@ export default function Home() {
           <div className={styles.imagesContainer}>
             <div className={styles.imageContainer}>
               <Image
-                src={"/images/Alice_Court_2/2.jpg"}
-                alt="Spotlight"
+              src={`/images/Alice_Court_2/3.jpeg`}
+              alt="Spotlight"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src={"/images/Alice_3/4.jpg"}
-                alt="Spotlight"
+              src={`/images/Alice_Court_2/8.jpeg`}
+              alt="Spotlight"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src={`/images/Alice/Alice_1.png`}
-                alt="Spotlight"
+              src={`/images/Alice_Court_2/10.jpeg`}
+              alt="Spotlight"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
               <Link href={"/projects/alice-court-1"}>
                 <div className={styles.spotOverlay}>
                   <p>LUXURY, CLASS & EXCELLENCE</p>
-                  <h4>Alice Court I</h4>
+                  <h4>Alice Court 2</h4>
                   <div className={styles.overlayAction}>
                     <ArrowRightOutlined />
                   </div>
@@ -457,7 +457,7 @@ export default function Home() {
             </div>
             <div className={styles.imageContainer}>
               <Image
-                src={"/images/Alice_Court_2/3.jpg"}
+                src={"/images/Alice_Court_2/10.jpeg"}
                 alt="Spotlight"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}

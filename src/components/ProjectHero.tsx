@@ -20,8 +20,8 @@ function ProjectHero({tag, name, description, location, linkBase, project, vidLi
   }, [domLoaded])
   return (
       <section className={styles.heroSection}>
-        {vidLink && domLoaded && <video src={vidLink} muted={true} autoPlay loop={true} controls={false} style={{objectFit: "cover", position: "absolute"}} width={"100%"} height={"100%"} />}
-        <Image className={styles.heroImage} src={"/images/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
+        {/* {vidLink && domLoaded && <video src={vidLink} muted={true} autoPlay loop={true} controls={false} style={{objectFit: "cover", position: "absolute"}} width={"100%"} height={"100%"} />} */}
+        <Image className={styles.heroImage} src={"/images/Alice_Court_2/10.jpeg"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
         <div className={styles.innerContainer}>
           <div className={styles.heroDetails}>
             <p className={styles.heroDetailsTag}>{tag}</p>
@@ -37,9 +37,9 @@ function ProjectHero({tag, name, description, location, linkBase, project, vidLi
               <Link href={`/projects/${linkBase}`}>
                 <button>Learn more →</button>
               </Link>
-              <div className={styles.heroCTAStyle}>
+              {/* <div className={styles.heroCTAStyle}>
                 <CaretRightFilled />
-              </div>
+              </div> */}
             </div>}
           </div>
           <div className={styles.heroNextButton}>

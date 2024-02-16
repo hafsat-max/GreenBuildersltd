@@ -37,6 +37,12 @@
     color: black;
 }
 
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 15px;
+}
 .profileSection .profileDetails{
     position: relative;
     top: -13rem;
