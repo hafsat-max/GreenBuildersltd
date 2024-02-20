@@ -54,7 +54,7 @@ export default function Profile() {
             <div className={styles.aboutContainer}>
               {
                 details.map((item,idx)=>(
-              <div className='flex flex-col gap-3' key={idx}>
+              <div className='flex flex-col gap-2' key={idx}>
              <h3 className='text-green'>{item.title}</h3>
             <p>{item.text}</p>
               </div>
