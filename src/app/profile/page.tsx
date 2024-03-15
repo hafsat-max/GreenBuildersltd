@@ -12,7 +12,7 @@ const details = [
 },
 {
   title:'Education and Credentials',
-  text:'Bldr. Damilare is a graduate of Obafemi Awolowo University, where he got a degree in Building construction Management. His commitment to professional growth is evident through his attainment of chartered builder status both locally and internationally, certified by CORBON and CIOB respectively.'
+  text:'Bldr. Damilare is a graduate of the Obafemi Awolowo University, where he got a degree in Building construction Management. His commitment to professional growth is evident through his attainment of chartered builder status both locally and internationally, certified by CORBON and CIOB respectively.'
 },
 {
   title:'Career Highlights',
