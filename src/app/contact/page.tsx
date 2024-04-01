@@ -24,13 +24,13 @@ export default function Home() {
             <ContactCard>
                 <>
                     <p>Company Address - Nigeria</p>
-                    <h4>Suite B20, Unique Shopping Mall By Old Passport Office, Off Oba Akinjobi Way Ikeja GRA, Lagos</h4>
+                    <h4>3a Faramobi Ajike street, Anthony village.</h4>
                 </>
             </ContactCard>
             <ContactCard>
                 <>
                     <p>Company Address - UNITED KINGDOM</p>
-                    <h4>91 Kildaire Street, Middlesborough TS1 4QY</h4>
+                    <h4> 126 cherry tree drive, Coventry, UK cv6 8lz</h4>
                 </>
             </ContactCard>
             <ContactCard>
@@ -42,7 +42,7 @@ export default function Home() {
                         <div>
                             <p>Company Phones</p>
                             <h5>+234 812 041 1851</h5>
-                            <h5>+234 812 041 1851</h5>
+                            <h5>+44 7707 218936</h5>
                         </div>
                     </div>
                     <div className={styles.contactGrp}>
@@ -52,7 +52,7 @@ export default function Home() {
                         <div>
                             <p>Dustro Emails</p>
                             <h5>d.greenbuildersltd@gmail.com</h5>
-                            <h5>contact@greenbuildersltd.</h5>
+                            <h5>contact@greenbuilderslimited.com</h5>
                         </div>
                     </div>
 
