@@ -43,7 +43,7 @@ export default function Home() {
           <div className={styles.absoluteImageContainer}>
             <div className={styles.imageContainer}>
               <Image
-                src={`/images/Alice/Alice_1.png`}
+                src={`/images/Alice/1.jpg`}
                 alt="About1"
                 fill
                 style={{ objectFit: "cover" }}
@@ -53,7 +53,7 @@ export default function Home() {
           <div className={styles.absoluteImageContainer2}>
             <div className={styles.imageContainer}>
               <Image
-                src={"/images/Alice_3/4.jpg"}
+                src={"/images/Alice_Court_2/10.jpeg"}
                 alt="About1"
                 fill
                 style={{ objectFit: "cover" }}
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             <div className={styles.devImage}>
               <Image
-                src={`/images/Alice/Alice_1.png`}
+                src={`/images/Alice/alice_main.png`}
                 alt="Development"
                 fill
                 style={{ objectFit: "cover" }}
@@ -125,7 +125,7 @@ export default function Home() {
             <div className={styles.sideImg}>
               <div className={styles.sideImgContainer}>
                 <Image
-                  src={"/images/services/development/sideImg.png"}
+                  src={"/images/Alice_Court_2/10.jpeg"}
                   alt="Development"
                   fill
                   style={{ objectFit: "cover" }}

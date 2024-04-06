@@ -52,7 +52,7 @@ export default function Home() {
                         <div>
                             <p>Dustro Emails</p>
                             <h5>d.greenbuildersltd@gmail.com</h5>
-                            <h5>contact@greenbuilderslimited.com</h5>
+                            <h5>admin@greenbuilderslimited.com</h5>
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@ export default function Home() {
                     <TextField name='entry.993730882' placeholder={"Your Address"} text={"text"} />
                 </div>
                 <TextArea name='entry.261272310' placeholder={"Enter Your Message Here . . ."} />
-                <button type='submit' >Submit Message →</button>
+                <button type='submit' formTarget='_blank' >Submit Message →</button>
 
             </form>
         </section>
