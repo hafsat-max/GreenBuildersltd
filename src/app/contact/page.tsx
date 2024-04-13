@@ -50,7 +50,7 @@ export default function Home() {
                             <Image src={"/svgs/chat.svg"} alt='Phone' fill style={{objectFit: "contain"}} />
                         </div>
                         <div>
-                            <p>Dustro Emails</p>
+                            <p>Company Emails</p>
                             <h5>d.greenbuildersltd@gmail.com</h5>
                             <h5>admin@greenbuilderslimited.com</h5>
                         </div>
