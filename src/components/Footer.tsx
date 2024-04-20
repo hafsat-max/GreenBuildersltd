@@ -118,7 +118,7 @@ function Footer() {
                 <MobileOutlined />
                 <div className={styles.contactDetails}>
                   <h6>NIGERIA</h6>
-                  <p>+234 812 041 1851</p>
+                  <p>+234 803 477 5470</p>
                   <h6>UNITED KINGDOM</h6>
                   <p>+44 7707 218936</p>
                 </div>
