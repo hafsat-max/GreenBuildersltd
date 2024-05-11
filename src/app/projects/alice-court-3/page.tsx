@@ -27,7 +27,7 @@ export default function Alice_Court_3() {
         <div className="projectDetailsText">
           <h2>Alice Court III</h2>
           <p>
-            Alice Court  III is a premium sophisticated 4 Bedroom Duplex on ground + 2 floors in Anthony Garden City, Anthony Village, Maryland Lagos. ALICE COURT III offers a private enclave of luxury contemporary residences, defining style of living, elegance and beauty. <br /><br /> To bring this exquisite property to life, Green Builders Limited appointed renowned architects to design this elegant piece of art with beautifully proportioned floor plans.  <br /><br />These masters of contemporary design have created an exquisite beauty for the residents. It was created for the elites who are dissatisfied with just the ordinary homes.This exclusive luxurious 2 Floor condominium with features to help you live a private indoor-outdoor lifestyle. <br /><br /> Unlike other projects, each unit comes with a wraparound terrace garden designed sustainability in mind - clean air, natural light and closeness to nature.
+            Alice Court  III is a premium sophisticated four 4 Bedroom Duplexes in Anthony Garden City, Anthony Village, Maryland Lagos. ALICE COURT III offers a private enclave of luxury contemporary residences, defining style of living, elegance and beauty. <br /><br /> To bring this exquisite property to life, Green Builders Limited appointed renowned architects to design this elegant piece of art with beautifully proportioned floor plans.  <br /><br />These masters of contemporary design have created an exquisite beauty for the residents. It was created for the elites who are dissatisfied with just the ordinary homes.This exclusive luxurious 2 Floor condominium with features to help you live a private indoor-outdoor lifestyle. <br /><br /> Unlike other projects, each unit comes with a wraparound terrace garden designed sustainability in mind - clean air, natural light and closeness to nature.
           </p>
           {/* 
           <div className="projectInfo">
@@ -49,14 +49,9 @@ export default function Alice_Court_3() {
           <div className="infoIcon">
             <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{ objectFit: "contain" }} />
           </div>
-          <p>7 units of 3 Bedrooms</p>
+          <p>4 units of 4 Bedrooms</p>
         </div>
-        <div className="info">
-          <div className="infoIcon">
-            <Image src={"/svgs/projects/bedroom.svg"} alt="Dimension" fill style={{ objectFit: "contain" }} />
-          </div>
-          <p>2 units of 4 Bedrooms Penthouse</p>
-        </div>
+
 
       </div>
 
