@@ -367,14 +367,19 @@ export default function Home() {
       <section className={styles.aboutSection}>
         <div className={styles.aboutDetails}>
           <h6>ABOUT US</h6>
-          <h2>With our knowledge we guarantee success</h2>
+          <h2>
+            Green Builders Limited is a leading and highly experienced
+            construction company specializing in all aspects of residential,
+            commercial, and industrial
+            
+            </h2>
           <p>
             We offer a wide range of construction services to suit your needs.
             Whether you are looking to build a new home, remodel your existing
             one, or construct a commercial building, we have the skills and
             expertise to handle any project, big or small.
           </p>
-          <Link href={"/about"} className='cursor-pointer'>
+          <Link href={"/about"} className="cursor-pointer">
             <button>Learn more →</button>
           </Link>
         </div>
@@ -424,24 +429,24 @@ export default function Home() {
           <div className={styles.imagesContainer}>
             <div className={styles.imageContainer}>
               <Image
-              src={`/images/Alice_Court_2/3.jpeg`}
-              alt="Spotlight"
+                src={`/images/Alice_Court_2/3.jpeg`}
+                alt="Spotlight"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
-              src={`/images/Alice_Court_2/8.jpeg`}
-              alt="Spotlight"
+                src={`/images/Alice_Court_2/8.jpeg`}
+                alt="Spotlight"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
             </div>
             <div className={styles.imageContainer}>
               <Image
-              src={`/images/Alice_Court_2/10.jpeg`}
-              alt="Spotlight"
+                src={`/images/Alice_Court_2/10.jpeg`}
+                alt="Spotlight"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
