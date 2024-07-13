@@ -37,9 +37,9 @@ export default function AliceSprings() {
           <h2>Alice Springs</h2>
           <p>
             This is a sophisticated project that will be built to match elegance
-            and exquisiteness. It consist of 40 units of 4 Bedrooms + a boy's
-            quarters each, a swimming pool,gym house, dedicated laundry room,
-            study room, a box room, amongst other features.
+            and exquisiteness. It consist of 40 units of 4 Bedrooms + a
+            boy&aposs quarters each, a swimming pool,gym house, dedicated
+            laundry room, study room, a box room, amongst other features.
           </p>
           {/* <div className="projectInfo">
             <h3>Project Info</h3>
