@@ -37,8 +37,8 @@ export default function AliceSprings() {
           <h2>Alice Springs</h2>
           <p>
             This is a sophisticated project that will be built to match elegance
-            and exquisiteness. It consist of 40 units of 4 Bedrooms + a
-            boy&aposs quarters each, a swimming pool,gym house, dedicated
+            and exquisiteness. It consist of 8 units of 4 Bedrooms + a
+            boy&aposs quarters and 5 units of 5 bedrooms each, a swimming pool,gym house, dedicated
             laundry room, study room, a box room, amongst other features.
           </p>
           {/* <div className="projectInfo">
@@ -76,7 +76,7 @@ export default function AliceSprings() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p>40 unit of 4 Bedrooms</p>
+          <p>4 unit of 4 Bedrooms and 5 units of 5 Bedrooms with BQ</p>
         </div>
         {/* <div className="info">
           <div className="infoIcon">
