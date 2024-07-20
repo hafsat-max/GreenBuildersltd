@@ -37,9 +37,10 @@ export default function AliceSprings() {
           <h2>Alice Springs</h2>
           <p>
             This is a sophisticated project that will be built to match elegance
-            and exquisiteness. It consist of 8 units of 4 Bedrooms + a
-            boy&aposs quarters and 5 units of 5 bedrooms each, a swimming pool,gym house, dedicated
-            laundry room, study room, a box room, amongst other features.
+            and exquisiteness. It consist of 8 units of 4 Bedrooms + a boy&aposs
+            quarters and 5 units of 5 bedrooms each, a swimming pool,gym house,
+            dedicated laundry room, study room, a box room, amongst other
+            features.
           </p>
           {/* <div className="projectInfo">
             <h3>Project Info</h3>
@@ -65,7 +66,7 @@ export default function AliceSprings() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p> Square Feet</p>
+          <p>1500 Square meters</p>
         </div>
         <div className="info">
           <div className="infoIcon">
@@ -97,6 +98,7 @@ export default function AliceSprings() {
           <p>5 Bathrooms</p>
         </div> */}
       </div>
+      {/* measured in sqm 1500sqm */}
 
       {/* <div className="gallery">
         <div className="images">
