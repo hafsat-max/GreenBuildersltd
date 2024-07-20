@@ -65,9 +65,9 @@ export default function AliceSprings() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          {/* <p>750 Square Feet</p> */}
+          <p> Square Feet</p>
         </div>
-        {/* <div className="info">
+        <div className="info">
           <div className="infoIcon">
             <Image
               src={"/svgs/projects/bedroom.svg"}
@@ -76,8 +76,8 @@ export default function AliceSprings() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p>4 unit of 4 Bedrooms with BQ</p>
-        </div> */}
+          <p>40 unit of 4 Bedrooms</p>
+        </div>
         {/* <div className="info">
           <div className="infoIcon">
             <Image src={"/svgs/projects/car.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
@@ -116,11 +116,11 @@ export default function AliceSprings() {
         <div className="map">
           <MapContainer
             src={
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.665618981596!2d3.386379099999999!3d6.563822999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d56d97d87e7%3A0x2ea347f46d41d42!2sALICE%20COURTS%202!5e0!3m2!1sen!2sng!4v1689375912621!5m2!1sen!2sng"
+              "https://www.google.com/maps/dir//Ikeja,+Lagos/@6.4859199,3.2674295,11.2z/data=!4m8!4m7!1m0!1m5!1m1!1s0x103b9228fa2a3999:0xd7a8324bddbba1f0!2m2!1d3.3514863!2d6.601838?entry=ttu"
             }
           />
         </div>
-      </div>
+      </div> */}
       <div className="projectController">
         <Link href={"/projects/alice-court-1"}>
           <div className="ctrlGrp">
@@ -153,7 +153,7 @@ export default function AliceSprings() {
       <div className="projects">
         <h1>Check Other Building Projects</h1>
         <LuxuryProjects />
-      </div> */}
+      </div>
 
       <Footer />
     </>
