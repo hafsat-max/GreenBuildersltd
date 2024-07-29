@@ -6,8 +6,6 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
 import {
-  RightOutlined,
-  EnvironmentOutlined,
   CaretRightFilled,
   PlusOutlined,
   ArrowRightOutlined,
@@ -170,7 +168,7 @@ export default function Home() {
             >
               <Image
                 src={e}
-                alt={`Alice Springs`}
+                alt={`Alice Springs ${i}`}
                 fill
                 style={{
                   objectFit: "cover",
