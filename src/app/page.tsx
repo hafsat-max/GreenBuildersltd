@@ -19,7 +19,7 @@ import { Carousel } from "@mantine/carousel";
 import useEmblaCarousel from "embla-carousel-react";
 
 export default function Home() {
-  const autoplay = useRef(Autoplay({ delay: 3000 }));
+  const autoplay = useRef(Autoplay({ delay: 2000 }));
 
   const imageNumber = [
     "/alicespring-flyer.jpg",
