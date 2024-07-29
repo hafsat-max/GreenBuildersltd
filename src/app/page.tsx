@@ -24,7 +24,7 @@ export default function Home() {
   const imageNumber = [
     "/alicespring-flyer.jpg",
     "/alice-spring5.jpeg",
-    "/alice-spring4.jpg",
+    "/alice-spring4.jpeg",
     "/alice-spring.jpg",
     "/alice-spring1.jpg",
     "/alice-spring6.jpeg",
