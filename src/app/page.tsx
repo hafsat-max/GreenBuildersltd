@@ -1,5 +1,7 @@
 "use client";
-
+import React, { useEffect } from "react";
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
@@ -12,12 +14,25 @@ import {
 } from "@ant-design/icons";
 import LuxuryProjects from "@/components/LuxuryProjects";
 import Testimonial from "@/components/Testimonial";
-import Carousel from "@/components/Carousel";
+import Carousels from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import ProjectHero from "@/components/ProjectHero";
+import { Carousel } from "@mantine/carousel";
+import useEmblaCarousel from "embla-carousel-react";
 
 export default function Home() {
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
+
+  const imageNumber = [
+    "/alicespring-flyer.jpg",
+    "/alice-spring5.jpg",
+    "/alice-spring4.jpg",
+    "/alice-spring.jpg",
+    "/alice-spring1.jpg",
+    "/alice-spring6.jpeg",
+    "/alice-spring3.jpg",
+  ];
+
   const companies = [
     <Image
       key={1}
@@ -128,44 +143,7 @@ export default function Home() {
       <NavBar />
       {/* Hero Section */}
 
-      {/* <section className={styles.heroSection}>
-        <Image className={styles.heroImage} src={"/images/heroImg.png"} alt='HeroAlice' fill style={{objectFit: "cover", objectPosition: "center"}} />
-        <div className={styles.heroDetails}>
-          <p className={styles.heroDetailsTag}>LUXURY, CLASS & EXCELLENCE</p>
-          <h1 className={styles.heroDetailsTitle}>Alice Court I</h1>
-          <p className={styles.heroDetailsDescription}>
-            Alice Court I is a luxury building project that offers a sophisticated living experience in a prime location. With exquisite design and state-of-the-art amenities, Alice Court I promises to provide residents with a comfortable and stylish lifestyle. The building boasts spacious and elegantly designed apartments, stunning views, and top-notch facilities .
-          </p>
-          <div className={styles.heroDetailsLocation}>
-            <EnvironmentOutlined /> 
-            <p>Alice Court I, Gbagada Estate, Lagos.</p>
-          </div>
-          <div className={styles.heroCTA}>
-            <Link href={"/projects/alice-court-1"}>
-              <button>Learn more →</button>
-            </Link>
-            <div className={styles.heroCTAStyle}>
-              <CaretRightFilled />
-            </div>
-          </div>
-        </div>
-        <div className={styles.heroNextButton}>
-          <RightOutlined />
-        </div>
-
-        <div className={styles.extraHeroDetails}>
-          <div className={styles.completedProjects}>
-            <h2>147</h2>
-            <p>Completed Projects</p>
-          </div>
-          <div className={styles.yrExp}>
-            <h2>25+</h2>
-            <p>Years of Experience</p>
-          </div>
-        </div>
-      </section> */}
-
-      <ProjectHero
+      {/* <ProjectHero
         tag={""}
         name={"GREEN BUILDERS LIMITED"}
         description={""}
@@ -173,7 +151,44 @@ export default function Home() {
         linkBase="alice-court-1"
         project={true}
         vidLink="/videos/heroVid.mp4"
-      />
+      /> */}
+
+      <Carousel
+        withIndicators
+        height={800}
+        loop
+        plugins={[autoplay.current]}
+        className="embla"
+        onMouseEnter={autoplay.current.stop}
+        onMouseLeave={autoplay.current.reset}
+      >
+        {imageNumber.map((e, i) => {
+          return (
+            <Carousel.Slide
+              className="embla__slide relative flex justify-center items-center"
+              key={i}
+            >
+              <Image
+                src={e}
+                alt={`Alice Springs`}
+                fill
+                style={{
+                  objectFit: "cover",
+                  background: "rgba(76, 175, 80, 0.3)",
+                }}
+              />
+              <div className=" justify-center items-center z-20 flex flex-col gap-2 ">
+                <h2 className="text-secondary font-extrabold text-9xl text-center">
+                  ALICE SPRINGS
+                </h2>
+                <p className="bg-white p-2 rounded text-center">
+                  LUXURY, CLASS & EXCELLENCE
+                </p>
+              </div>
+            </Carousel.Slide>
+          );
+        })}
+      </Carousel>
 
       {/* We are Green Builders */}
       <section className={`${styles.weAreSection} noneTab`}>
@@ -371,8 +386,7 @@ export default function Home() {
             Green Builders Limited is a leading and highly experienced
             construction company specializing in all aspects of residential,
             commercial, and industrial
-            
-            </h2>
+          </h2>
           <p>
             We offer a wide range of construction services to suit your needs.
             Whether you are looking to build a new home, remodel your existing
@@ -520,7 +534,7 @@ export default function Home() {
           Our collaborative vision for building projects has paid off with a
           number of collaborations and partnerships
         </h4>
-        <Carousel items={companies} />
+        <Carousels items={companies} />
       </section>
 
       <Footer />

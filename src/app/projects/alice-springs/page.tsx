@@ -7,9 +7,20 @@ import ProjectHero from "@/components/ProjectHero";
 import Image from "next/image";
 import LuxuryProjects from "@/components/LuxuryProjects";
 import MapContainer from "@/components/MapContainer";
+import { FaSwimmingPool } from "react-icons/fa";
+import { MdLocalLaundryService } from "react-icons/md";
+import { IoLibrarySharp } from "react-icons/io5";
 
 export default function AliceSprings() {
-  const imageNumber = [2, 3, 4, 5, 6, 7, 8, 9];
+  const imageNumber = [
+    "/alicespring-flyer.jpg",
+    "/alice-spring5.jpg",
+    "/alice-spring4.jpg",
+    "/alice-spring.jpg",
+    "/alice-spring1.jpg",
+    "/alice-spring6.jpeg",
+    "/alice-spring3.jpg",
+  ];
 
   return (
     <>
@@ -20,14 +31,14 @@ export default function AliceSprings() {
         name={"Alice Springs"}
         // description={"Alice springs is a property that contains"}
         location={"Ikeja, Lagos"}
-        img="/alice-spring.jpeg"
+        img="/alicespring-flyer.jpg"
       />
 
       <div className="project-details">
         <div className="projectDetailsImage">
           <Image
             className="image"
-            src={"/alice-spring.jpeg"}
+            src={"/alicespring-flyer.jpg"}
             alt="Alice spring"
             fill
           />
@@ -66,7 +77,7 @@ export default function AliceSprings() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p>1500 Square meters</p>
+          <p>250 meters</p>
         </div>
         <div className="info">
           <div className="infoIcon">
@@ -77,37 +88,47 @@ export default function AliceSprings() {
               style={{ objectFit: "contain" }}
             />
           </div>
-          <p>4 unit of 4 Bedrooms and 5 units of 5 Bedrooms with BQ</p>
-        </div>
-        {/* <div className="info">
-          <div className="infoIcon">
-            <Image src={"/svgs/projects/car.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
-          </div>
-          <p>1 Garage</p>
+          <p>4 unit of 4 Bedrooms with BQ and 4 units of 5 Bedrooms with BQ</p>
         </div>
         <div className="info">
-          <div className="infoIcon">
-            <Image src={"/svgs/projects/time.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
-          </div>
-          <p>24/7 Power Supply</p>
+          {/* <div className="infoIcon">
+            <Image
+              src={"/svgs/projects/car.svg"}
+              alt="Dimension"
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div> */}
+          <FaSwimmingPool color="#bea23c" size={30} />
+          <p>Swimming pool</p>
         </div>
         <div className="info">
-          <div className="infoIcon">
-            <Image src={"/svgs/projects/bathroom.svg"} alt="Dimension" fill style={{objectFit: "contain"}} />
-          </div>
-          <p>5 Bathrooms</p>
-        </div> */}
+          {/* <div className="infoIcon">
+            <Image
+              src={"/svgs/projects/time.svg"}
+              alt="Dimension"
+              fill
+              style={{ objectFit: "contain" }}
+            />
+          </div> */}
+          <MdLocalLaundryService color="#bea23c" size={25} />
+          <p>Laundry room</p>
+        </div>
+        <div className="info">
+          <IoLibrarySharp color="#bea23c" size={25} />
+          <p>Study room</p>
+        </div>
       </div>
       {/* measured in sqm 1500sqm */}
 
-      {/* <div className="gallery">
+      <div className="gallery">
         <div className="images">
           {imageNumber.map((e, i) => {
             return (
               <div key={i} className="imageContainer">
                 <Image
-                  src={`/images/Alice_Court_2/${e}.jpeg`}
-                  alt={`Alice_${e}`}
+                  src={e}
+                  alt={`Alice Springs`}
                   fill
                   style={{ objectFit: "cover" }}
                 />
@@ -118,11 +139,11 @@ export default function AliceSprings() {
         <div className="map">
           <MapContainer
             src={
-              "https://www.google.com/maps/dir//Ikeja,+Lagos/@6.4859199,3.2674295,11.2z/data=!4m8!4m7!1m0!1m5!1m1!1s0x103b9228fa2a3999:0xd7a8324bddbba1f0!2m2!1d3.3514863!2d6.601838?entry=ttu"
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.352875235292!2d3.344284775030683!3d6.60299592223436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93e0e421fc39%3A0x7899836724bf8ba2!2sOpebi%20awuse%20estate!5e0!3m2!1sen!2sng!4v1722246654406!5m2!1sen!2sng"
             }
           />
         </div>
-      </div> */}
+      </div>
       <div className="projectController">
         <Link href={"/projects/alice-court-1"}>
           <div className="ctrlGrp">

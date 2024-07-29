@@ -24,7 +24,7 @@ function LuxuryProjects() {
     {
       name: "Alice Springs",
       url: "/projects/alice-springs",
-      img: "/alice-spring.jpeg",
+      img: "/alicespring-flyer.jpg",
     },
   ];
   return (
