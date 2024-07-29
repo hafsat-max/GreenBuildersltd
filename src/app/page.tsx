@@ -168,7 +168,7 @@ export default function Home() {
             >
               <Image
                 src={e}
-                alt={`Alice Springs ${i}`}
+                alt={`Alice Springs ${i + 1}`}
                 fill
                 style={{
                   objectFit: "cover",
