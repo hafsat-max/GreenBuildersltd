@@ -151,7 +151,7 @@ export default function Home() {
         vidLink="/videos/heroVid.mp4"
       /> */}
 
-      <Carousel
+      {/* <Carousel
         withIndicators
         height={800}
         loop
@@ -186,7 +186,7 @@ export default function Home() {
             </Carousel.Slide>
           );
         })}
-      </Carousel>
+      </Carousel> */}
 
       {/* We are Green Builders */}
       <section className={`${styles.weAreSection} noneTab`}>
